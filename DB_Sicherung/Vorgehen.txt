@@ -1,0 +1,31 @@
+Tomcat pws stoppen
+
+Datenbank von www.pws.com exportieren (phpMyAdmin)
+ usr_web3999_1  (7)  auswahlen 
+	Drop Table auswählen (checkbox)
+	
+Neue Datei unter DB_Sicherung/20060201.txt speichern
+
+Inhalt in db/data_mysql.sql inserten
+
+folgende Zeilen in db/data_mysql.sql löschen:
+	CREATE DATABASE `usr_web3999_1` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+	DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci
+	ENGINE=MyISAM DEFAULT CHARSET=latin1
+
+z.B.:
+
+DROP TABLE IF EXISTS `Invoices`;
+CREATE TABLE `Invoices` (
+  `invoice_id` int(11) NOT NULL auto_increment,
+  `partner_id` int(11) default NULL,
+  `create_date` varchar(20) default NULL,
+  `send_date` varchar(20) default NULL,
+  `order_total` double default NULL,
+  `order_amount` int(11) default NULL,
+  `invoice_total` double default NULL,
+  PRIMARY KEY  (`invoice_id`)
+) --------------------> ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=22  <---------------------  ;
+	
+
+ant populateMySqlDatabase aufrufen

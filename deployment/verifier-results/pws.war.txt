@@ -1,0 +1,616 @@
+
+          ---------------------------
+          STATIC VERIFICATION RESULTS
+          ---------------------------
+
+	
+	 ----------------------------------
+	 NUMBER OF FAILURES/WARNINGS/ERRORS
+	 ----------------------------------
+	 # of Failures : 1
+         # of Warnings : 0
+	 # of Errors : 0
+
+          -----------------------------
+          RESULTS FOR WEB-RELATED TESTS
+          -----------------------------
+	
+	 ---------------
+	 PASSED TESTS :
+	 ---------------
+	
+	 Test Name : tests.web.AllJSPsMustBeCompilable
+	 Test Assertion : All the JSPs that are bundled inside a web application must be compilable using a J2EE compliant JSP compiler that does not have any proprietary or optional features in it. 
+	 Test Description : For [ pws.war ]
+All JSPs are compilable. 
+
+	 Test Name : tests.web.TagLibHandlerExists
+	 Test Assertion : Tag library file exists in the WAR file. 
+	 Test Description : For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.InsertTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.DefinitionTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.PutTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.PutListTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.AddTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.GetTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.GetAttributeTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.UseAttributeTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.ImportAttributeTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.tiles.InitDefinitionsTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.CookieTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.DefineTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.HeaderTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.IncludeTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.MessageTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.PageTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.ParameterTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.ResourceTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.SizeTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.StrutsTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.bean.WriteTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.BaseTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.ButtonTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.CancelTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.CheckboxTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.ErrorsTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.FileTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.FormTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.FrameTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.HiddenTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.HtmlTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.ImageTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.ImgTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.JavascriptValidatorTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.LinkTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.MessagesTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.MultiboxTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.OptionTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.OptionsTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.OptionsCollectionTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.PasswordTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.RadioTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.ResetTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.RewriteTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.SelectTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.SubmitTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.TextTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.TextareaTag ] found in [ pws ].
+For [ pws.war ]
+Tag library class [ org.apache.struts.taglib.html.XhtmlTag ] found in [ pws ].
+
+	 Test Name : tests.web.ServletInterface
+	 Test Assertion : Servlet implements the javax.servlet.Servlet interface either directly or indirectly through GenericServlet or HttpServlet. Please refer to Java Servlet 2.4 Specification Section #SRV.2.3 for further information.
+	 Test Description : For [ pws.war ]
+Servlet class [ de.hopfit.util.InitServlet ] directly or indirectly implements javax.servlet.Servlet.
+For [ pws.war ]
+Servlet class [ org.apache.axis.transport.http.AxisServlet ] directly or indirectly implements javax.servlet.Servlet.
+For [ pws.war ]
+Servlet class [ org.apache.myfaces.shared_tomahawk.util.servlet.SourceCodeServlet ] directly or indirectly implements javax.servlet.Servlet.
+For [ pws.war ]
+Servlet class [ org.apache.struts.action.ActionServlet ] directly or indirectly implements javax.servlet.Servlet.
+For [ pws.war ]
+Servlet class [ javax.faces.webapp.FacesServlet ] directly or indirectly implements javax.servlet.Servlet.
+For [ pws.war ]
+Servlet class [ de.hopfit.util.ValidateServlet ] directly or indirectly implements javax.servlet.Servlet.
+For [ pws.war ]
+Servlet class [ org.apache.axis.transport.http.AdminServlet ] directly or indirectly implements javax.servlet.Servlet.
+
+	 Test Name : tests.web.ServletClass
+	 Test Assertion : Servlet class resides in the WEB-INF/classes directory. Please refer to Java Servlet 2.4 Specification Section #SRV.9.5 for further information.
+	 Test Description : For [ pws.war ]
+Servlet class [ de.hopfit.util.InitServlet ] resides in the WEB-INF/classes directory.
+For [ pws.war ]
+Servlet class [ org.apache.axis.transport.http.AxisServlet ] resides in the WEB-INF/classes directory.
+For [ pws.war ]
+Servlet class [ org.apache.myfaces.shared_tomahawk.util.servlet.SourceCodeServlet ] resides in the WEB-INF/classes directory.
+For [ pws.war ]
+Servlet class [ org.apache.struts.action.ActionServlet ] resides in the WEB-INF/classes directory.
+For [ pws.war ]
+Servlet class [ javax.faces.webapp.FacesServlet ] resides in the WEB-INF/classes directory.
+For [ pws.war ]
+Servlet class [ de.hopfit.util.ValidateServlet ] resides in the WEB-INF/classes directory.
+For [ pws.war ]
+Servlet class [ org.apache.axis.transport.http.AdminServlet ] resides in the WEB-INF/classes directory.
+
+	 Test Name : tests.web.WelcomeFile
+	 Test Assertion : welcome-file element contains the file name to use as a default welcome file. 
+	 Test Description : For [ pws.war ]
+welcome-file element [ index.jsp ] contains the file name to use as a default welcome file within Web application [ pws ].
+For [ pws.war ]
+welcome-file element [ index.html ] contains the file name to use as a default welcome file within Web application [ pws ].
+
+	 Test Name : tests.web.SessionTimeout
+	 Test Assertion : Servlet session-timeout element defines the default session timeout interval expressed in whole minutes. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+Servlet session-timeout [ 15 ] element defines the default session timeout interval expressed in whole minutes.
+
+	 Test Name : tests.web.SessionConfigTest
+	 Test Assertion : The deployment descriptor instance file must not contain multiple session-config elements. 
+	 Test Description : For [ pws.war ]
+The session-config element is specified correctly.
+
+	 Test Name : tests.web.JarContainsXMLFile
+	 Test Assertion : JAR file contains the XML-based deployment descriptor. Please refer to Java Servlet 2.4 Specification Section #SRV.9.5 for further information.
+	 Test Description : For [ pws.war ]
+Found deployment descriptor XML file [ WEB-INF/web.xml ].
+
+	 Test Name : tests.web.URLPatternErrorCheck
+	 Test Assertion : Content of the url-pattern element must follow the rules specified in the servlet specification. Please refer to Java Servlet 2.4 Specification Section #SRV.11.2 for further information.
+	 Test Description : For [ pws.war ]
+url-pattern [ *.source ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ /servlet/AxisServlet ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ *.jws ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ /services/* ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ *.do ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ *.jsf ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ /validate ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ /servlet/AdminServlet ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ *.jsf ] within [ pws ] follows the rules specified in the servlet specification.
+For [ pws.war ]
+url-pattern [ /faces/* ] within [ pws ] follows the rules specified in the servlet specification.
+
+	 Test Name : tests.web.URLPatternWarningCheck
+	 Test Assertion : A url-pattern used for an exact match should not contain an asterisk (*). Please refer to Java Servlet 2.4 Specification Section #SRV.11.2 for further information.
+	 Test Description : For [ pws.war ]
+url-pattern [ *.source ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ /servlet/AxisServlet ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ *.jws ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ /services/* ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ *.do ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ *.jsf ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ /validate ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ /servlet/AdminServlet ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ *.jsf ] within [ pws ] follows the rules specified in servlet specification.
+For [ pws.war ]
+url-pattern [ /faces/* ] within [ pws ] follows the rules specified in servlet specification.
+
+	 Test Name : tests.web.URLPatternContainsCRLF
+	 Test Assertion : url-pattern contains a carriage return (CR) or line feed (LF). Please refer to Java Servlet 2.4 Specification Section #SRV.11.2 for further information.
+	 Test Description : For [ pws.war ]
+url-pattern [ *.source ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ /servlet/AxisServlet ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ *.jws ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ /services/* ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ *.do ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ *.jsf ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ /validate ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ /servlet/AdminServlet ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ *.jsf ] within [ pws ] does not contain carriage return or line feed character.
+For [ pws.war ]
+url-pattern [ /faces/* ] within [ pws ] does not contain carriage return or line feed character.
+
+	 Test Name : tests.web.URLPatternUniqueInServletMappings
+	 Test Assertion : All the servlet-mappings contain unique url-patterns. 
+	 Test Description : For [ pws.war ]
+All the servlet-mappings contain unique url-patterns within Web archive [ pws ].
+
+	 Test Name : tests.web.LibDirExists
+	 Test Assertion : Servlet lib directory resides in WEB-INF/lib directory. Please refer to Java Servlet 2.4 Specification Section #SRV.9.5 for further information.
+	 Test Description : For [ pws.war ]
+Servlet lib directory [ WEB-INF/lib ] resides in WEB-INF/lib directory of [ C:\DOKUME~1\Hopf\LOKALE~1\Temp\exploded20080927084612\pws ].
+For [ pws.war ]
+Servlet lib directory [ WEB-INF/lib ] resides in WEB-INF/lib directory of [ C:\DOKUME~1\Hopf\LOKALE~1\Temp\exploded20080927084612\pws ].
+For [ pws.war ]
+Servlet lib directory [ WEB-INF/lib ] resides in WEB-INF/lib directory of [ C:\DOKUME~1\Hopf\LOKALE~1\Temp\exploded20080927084612\pws ].
+For [ pws.war ]
+Servlet lib directory [ WEB-INF/lib ] resides in WEB-INF/lib directory of [ C:\DOKUME~1\Hopf\LOKALE~1\Temp\exploded20080927084612\pws ].
+For [ pws.war ]
+Servlet lib directory [ WEB-INF/lib ] resides in WEB-INF/lib directory of [ C:\DOKUME~1\Hopf\LOKALE~1\Temp\exploded20080927084612\pws ].
+For [ pws.war ]
+Servlet lib directory [ WEB-INF/lib ] resides in WEB-INF/lib directory of [ C:\DOKUME~1\Hopf\LOKALE~1\Temp\exploded20080927084612\pws ].
+For [ pws.war ]
+Servlet lib directory [ WEB-INF/lib ] resides in WEB-INF/lib directory of [ C:\DOKUME~1\Hopf\LOKALE~1\Temp\exploded20080927084612\pws ].
+
+	 Test Name : tests.web.ParamName
+	 Test Assertion : Web application's param-name exists. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+param-name exists in the Web application.
+
+	 Test Name : tests.web.ParamValue
+	 Test Assertion : Web application's param-value exists. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+param-value exists in the Web application.
+For [ pws.war ]
+param-value exists in the Web application.
+For [ pws.war ]
+param-value exists in the Web application.
+For [ pws.war ]
+param-value exists in the Web application.
+For [ pws.war ]
+param-value exists in the Web application.
+For [ pws.war ]
+param-value exists in the Web application.
+
+	 Test Name : tests.web.ServletParamValue
+	 Test Assertion : Web application's ServletParam value exists. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+ServletParam value exists in the Web application.
+
+	 Test Name : tests.web.ServletParamName
+	 Test Assertion : Web application's ServletParam name exists. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+ServletParam name exists in the Web application.
+
+	 Test Name : tests.web.ResourceAuth
+	 Test Assertion : Resource reference authorization. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : 
+	 Test Name : tests.web.TaglibUri
+	 Test Assertion : taglib-uri element test. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+taglib-uri element is a non-empty string.
+
+	 Test Name : tests.web.TaglibLocation
+	 Test Assertion : Tag library file exists in the specified location. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+Tag library exists in the Web application.
+For [ pws.war ]
+Tag library exists in the Web application.
+For [ pws.war ]
+Tag library exists in the Web application.
+
+	 Test Name : tests.web.elements.MimeTypeElement
+	 Test Assertion : Servlet mime-type element contains a defined MIME type. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+Servlet mime-type [ text/xml ] is defined and valid for this Web application [ pws ].
+For [ pws.war ]
+Servlet mime-type [ text/xml ] is defined and valid for this Web application [ pws ].
+
+	 Test Name : tests.web.ListenerClassHasValidConstructor
+	 Test Assertion : Listener class has a public constructor that takes no argument. Please refer to Java Servlet 2.4 Specification Section #SRV.10.3.1 for further information.
+	 Test Description : Listener class [ org.apache.axis.transport.http.AxisHTTPSessionListener ] implements a valid constructor.
+
+	 Test Name : tests.web.ListenerClassImplementsValidInterface
+	 Test Assertion : Listener class implements one of the listener interfaces. Please refer to Java Servlet 2.4 Specification Section #SRV.10.3.1 for further information.
+	 Test Description : Listener class [ org.apache.axis.transport.http.AxisHTTPSessionListener ] implements a valid listener interface.
+
+	 Test Name : tests.web.FilterClassExists
+	 Test Assertion : Filter class resides in the WEB-INF/classes directory or WEB-INF/lib JAR files. Please refer to Java Servlet 2.4 Specification Section #SRV.6.2.4 for further information.
+	 Test Description : Declared filter class [ org.apache.myfaces.webapp.filter.ExtensionsFilter ] resides in WEB-INF/classes or WEB-INF/lib.
+
+	 Test Name : tests.web.FilterMapping
+	 Test Assertion : Filter mapping should be a correct URL or a servlet-name within the application. Please refer to Java Servlet 2.4 Specification Section #SRV.6.2.4 for further information.
+	 Test Description : For [ pws.war ]
+All filter mappings are correct.
+
+	 Test Name : tests.web.FilterClassImplementsValidInterface
+	 Test Assertion : Filter class implements the javax.servlet.Filter interface. Please refer to Java Servlet 2.4 Specification Section #SRV.6.2 for further information.
+	 Test Description : The class [ org.apache.myfaces.webapp.filter.ExtensionsFilter ] implements the [ javax.servlet.Filter ] interface. 
+
+	 Test Name : tests.web.FilterClassHasValidConstructor
+	 Test Assertion : Filter class has a public constructor that takes no argument. Please refer to Java Servlet 2.4 Specification Section #SRV.6.2 for further information.
+	 Test Description : Filter class [ org.apache.myfaces.webapp.filter.ExtensionsFilter ] implements a valid constructor.
+
+	 Test Name : tests.web.FilterInitParamName
+	 Test Assertion : Filter init param name should be unique and not empty. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3, #SRV.6.2.3 for further information.
+	 Test Description : For [ pws.war ]
+All initialization parameter names are unique.
+
+	 Test Name : tests.web.ListenerClassExists
+	 Test Assertion : Listener class resides in the WEB-INF/classes directory or WEB-INF/lib JAR files. Please refer to Java Servlet 2.4 Specification Section #SRV.10.3.1 for further information.
+	 Test Description : Declared Listener class [ org.apache.axis.transport.http.AxisHTTPSessionListener ] resides in WEB-INF/classes or WEB-INF/lib.
+
+	 Test Name : tests.web.FilterInitParamValue
+	 Test Assertion : Filter init param value should not be an empty string. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3, #SRV.6.2.3 for further information.
+	 Test Description : For [ pws.war ]
+Param value exists for the filter [ extensionsFilter ].
+Param value exists for the filter [ extensionsFilter ].
+
+	 Test Name : tests.web.ServletClassDeclared
+	 Test Assertion : All servlets packaged in a WAR file must be declared in the deployment descriptors. Please refer to Java Servlet 2.4 Specification Section #SRV.9.7 for further information.
+	 Test Description : Servlet class [ de.hopfit.util.InitServlet ] found in war file is defined in the Deployement Descriptors
+Servlet class [ de.hopfit.util.ValidateServlet ] found in war file is defined in the Deployement Descriptors
+
+	 Test Name : tests.web.TEIClassExtendsValidInterface
+	 Test Assertion : tei-class implements javax.servlet.jsp.tagext.TagExtraInfo. 
+	 Test Description : For [ pws.war ]
+tei-class [ org.apache.struts.taglib.tiles.UseAttributeTei ] in [ /WEB-INF/lib/struts-tiles.tld ]implements valid interface.
+tei-class [ org.apache.struts.taglib.bean.CookieTei ] in [ /WEB-INF/lib/struts-bean.tld ]implements valid interface.
+tei-class [ org.apache.struts.taglib.html.MessagesTei ] in [ /WEB-INF/lib/struts-html.tld ]implements valid interface.
+
+	 Test Name : tests.web.TagClassExtendsValidInterface
+	 Test Assertion : Tag class implements javax.servlet.jsp.tagext.JspTag for JSP version 2.0, javax.servlet.jsp.tagext.Tag for earlier versions of JSP specification. 
+	 Test Description : For [ pws.war ]
+Tag class [ org.apache.struts.taglib.tiles.InsertTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.DefinitionTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.PutTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.PutListTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.AddTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.GetTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.GetAttributeTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.UseAttributeTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.ImportAttributeTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.tiles.InitDefinitionsTag ] in [ /WEB-INF/lib/struts-tiles.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.CookieTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.DefineTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.HeaderTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.IncludeTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.MessageTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.PageTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.ParameterTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.ResourceTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.SizeTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.StrutsTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.bean.WriteTag ] in [ /WEB-INF/lib/struts-bean.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.BaseTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.ButtonTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.CancelTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.CheckboxTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.ErrorsTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.FileTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.FormTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.FrameTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.HiddenTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.HtmlTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.ImageTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.ImgTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.JavascriptValidatorTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.LinkTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.MessagesTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.MultiboxTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.OptionTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.OptionsTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.OptionsCollectionTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.PasswordTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.RadioTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.ResetTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.RewriteTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.SelectTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.SubmitTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.TextTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.TextareaTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+Tag class [ org.apache.struts.taglib.html.XhtmlTag ] in [ /WEB-INF/lib/struts-html.tld ] implements a valid interface.
+
+	 Test Name : tests.web.TagNameIsUnique
+	 Test Assertion : The name subelement in the tag element defines a unique action name. 
+	 Test Description : For [ pws.war ]
+All name elements are defined properly under the tag element of [ /WEB-INF/lib/struts-tiles.tld ].
+All name elements are defined properly under the tag element of [ /WEB-INF/lib/struts-bean.tld ].
+All name elements are defined properly under the tag element of [ /WEB-INF/lib/struts-html.tld ].
+
+	 ---------------------
+	 NOTAPPLICABLE TESTS :
+	 ---------------------
+	
+	 Test Name : tests.web.JspFile
+	 Test Assertion : jsp-file element contains the full path to a JSP file within the Web application. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no JSP components within the Web archive [ pws ].
+
+	 Test Name : tests.web.JspLoadOnStartup
+	 Test Assertion : The value of the JSP load-on-startup element must be an integer. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no JSP pages within the Web archive [ pws ].
+
+	 Test Name : tests.web.ErrorCode
+	 Test Assertion : error-code element contains an HTTP error code. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no error-code elements within the Web archive [ pws ].
+
+	 Test Name : tests.web.ExceptionType
+	 Test Assertion : exception-type element contains a fully qualified class name of a Java exception type. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no exception-type elements within the Web archive [ pws ].
+
+	 Test Name : tests.web.RoleLink
+	 Test Assertion : The role-link element is used to link a security role reference to a defined security role. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+[  ] has no role-link element defined within the Web archive [ pws ].
+For [ pws.war ]
+[  ] has no role-link element defined within the Web archive [ pws ].
+For [ pws.war ]
+[  ] has no role-link element defined within the Web archive [ pws ].
+For [ pws.war ]
+[  ] has no role-link element defined within the Web archive [ pws ].
+For [ pws.war ]
+[  ] has no role-link element defined within the Web archive [ pws ].
+For [ pws.war ]
+[  ] has no role-link element defined within the Web archive [ pws ].
+For [ pws.war ]
+[  ] has no role-link element defined within the Web archive [ pws ].
+
+	 Test Name : tests.web.WebEnvEntryValue
+	 Test Assertion : Web archive environment entry value must be a string that is valid for the constructor of the specified type that takes a single String parameter. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no env-entry elements defined within this Web archive [ pws ].
+
+	 Test Name : tests.web.WebEnvEntryValueType
+	 Test Assertion : Web archive environment entry value type. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no env-entry elements defined within this Web archive [ pws ].
+
+	 Test Name : tests.web.WebResourceType
+	 Test Assertion : The resource-type element specifies the Java class type of the data source. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no resource-type elements within the Web archive [ pws ].
+
+	 Test Name : tests.web.WebResourceName
+	 Test Assertion : The web-resource-name element contains the name of this Web resource collection. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no web-resource-name elements within the Web archive [ pws ].
+
+	 Test Name : tests.web.WebResourceHTTPMethod
+	 Test Assertion : The http-method element contains the name of the Web resource collection's HTTP method. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no http-method elements within the Web archive [ pws ].
+
+	 Test Name : tests.web.TransportGuarantee
+	 Test Assertion : The transport-guarantee element specifies that the communication between client and server should be "SECURE", "NONE", or "CONFIDENTIAL". Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no transport-guarantee elements within the Web archive [ pws ].
+
+	 Test Name : tests.web.WebSecurityRoleName
+	 Test Assertion : Web security role names. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no security role-name elements within this Web archive [ pws ].
+
+	 Test Name : tests.web.AuthMethod
+	 Test Assertion : Web auth-method must be one of the following: "BASIC", "DIGEST", "FORM" or "CLIENT-CERT". Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no auth-method elements within this Web archive [ pws ].
+
+	 Test Name : tests.web.FormLoginPage
+	 Test Assertion : Web form-login-page value defines the location in the Web application where the page to be used for login can be found. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no form-login-page elements within this Web archive [ pws ].
+
+	 Test Name : tests.web.FormErrorPage
+	 Test Assertion : Web form-error-page value defines the location in the Web application where the error page that is displayed when login is not successful can be found. Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : For [ pws.war ]
+There are no form-error-page elements within this Web archive [ pws ].
+
+	 Test Name : tests.web.RealmName
+	 Test Assertion : Web realm-name specifies the realm name to use in HTTP basic authentication. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no realm-name elements within this Web archive [ pws ].
+
+	 Test Name : tests.web.EjbLinkElement
+	 Test Assertion : The value of the ejb-link element is the ejb-name of an enterprise bean in the same J2EE application archive. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4, J2EE 1.4 Platform Specification Section #5.3.2 for further information.
+	 Test Description : There are no EJB references to other beans within this Web archive [ pws ].
+
+	 Test Name : tests.web.URLPatternUniqueInSecurityConstraints
+	 Test Assertion : All the security constraints contain unique url-patterns. 
+	 Test Description : For [ pws.war ]
+There is no security-constraint within the Web archive [ pws ].
+
+	 Test Name : tests.web.ResourceRefName
+	 Test Assertion : Resource reference name exists. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no resource references defined within the Web archive [ pws ].
+
+	 Test Name : tests.web.WebEnvEntryName
+	 Test Assertion : Web environment entry name. Please refer to Java Servlet 2.4 Specification Section #SRV.13.4 for further information.
+	 Test Description : For [ pws.war ]
+There are no environment entry elements defined within this Web archive [ pws ].
+
+	 Test Name : tests.web.elements.WebEjbRefTypeElement
+	 Test Assertion : Web archive enterprise bean reference type. Please refer to Java Servlet 2.3 Specification Section #SRV.13.3, Java Servlet 2.4 Specification Section 13.4, J2EE 1.4 Platform Specification Section #5.3.1.2, J2EE 1.4 Platform Specification Section #5.3.2 for further information.
+	 Test Description : For [ pws.war ]
+There are no EJB references to other beans within the Web archive [ pws ].
+
+	 Test Name : tests.web.elements.WebEjbReferencesElement
+	 Test Assertion : Web archive references to other bean's home interfaces. Please refer to Java Servlet 2.3 Specification Section #SRV.13.3, Java Servlet 2.4 Specification Section 13.4, J2EE 1.4 Platform Specification Section #5.3.1.2, J2EE 1.4 Platform Specification Section #5.3.2 for further information.
+	 Test Description : For [ pws.war ]
+There is no ejb-ref inside [ pws.war ].
+
+	 Test Name : tests.web.FilterSmallIcon
+	 Test Assertion : Declared filter small icon is present in the archive file Please refer to Java Servlet 2.4 Specification Section #SRV.13.3 for further information.
+	 Test Description : No Filter Small Icon defined in deployment descriptors.
+
+	 Test Name : tests.web.FilterLargeIcon
+	 Test Assertion : Declared filter large icon is present in the archive file 
+	 Test Description : No Filter Large Icon defined in deployment descriptors.
+
+	 --------------
+	 FAILED TESTS : 
+	 --------------
+	
+	 Test Name : tests.web.WebArchiveClassesLoadable
+	 Test Assertion : All classes in this Web Archive are loadable. Please refer to J2EE 1.4 Specification Section #8.1.2 for further information.
+	 Test Description : For [ pws.war ]
+
+
+classes [ org.jaxen.saxpath.SAXPathException org.jaxen.JaxenException org.jaxen.SimpleVariableContext org.jaxen.VariableContext org.jaxen.XPathFunctionContext org.jaxen.Context org.jaxen.dom4j.DocumentNavigator org.jaxen.SimpleNamespaceContext org.jaxen.ContextSupport org.jaxen.pattern.Pattern org.jaxen.pattern.PatternParser ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.type.NullableType\org.dom4j.Node\org.dom4j.Element\org.dom4j.QName\org.dom4j.DocumentFactory\org.dom4j.xpath.XPathPattern] are not found
+
+classes [ org.jaxen.NamespaceContext org.jaxen.FunctionContext org.jaxen.VariableContext ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.type.NullableType\org.dom4j.Node\org.dom4j.Element\org.dom4j.QName\org.dom4j.DocumentFactory\org.dom4j.tree.AbstractDocument\org.dom4j.io.XMLWriter\org.dom4j.Namespace\org.dom4j.tree.AbstractNode\org.dom4j.XPath] are not found
+
+classes [ org.jaxen.NamespaceContext ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.type.NullableType\org.dom4j.Node\org.dom4j.Element\org.dom4j.QName\org.dom4j.DocumentFactory\org.dom4j.xpath.DefaultXPath\org.dom4j.xpath.DefaultNamespaceContext] are not found
+
+classes [ antlr.RecognitionException ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQuerySpecification\org.hibernate.loader.custom.SQLQueryReturn\org.hibernate.HibernateException\org.hibernate.exception.NestableRuntimeException] are not found
+
+classes [ org.objectweb.asm.util.TraceClassVisitor ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.dialect.Dialect$2\org.hibernate.Hibernate\org.hibernate.type.ManyToOneType\org.hibernate.type.EntityType\org.hibernate.engine.ForeignKeys\org.hibernate.engine.PersistenceContext\org.hibernate.engine.CollectionLoadContext\org.hibernate.cfg.Settings\org.hibernate.hql.QueryTranslatorFactory\org.hibernate.hql.QueryTranslator\org.hibernate.event.EventSource\org.hibernate.engine.ActionQueue\org.hibernate.action.EntityIdentityInsertAction\org.hibernate.event.EventListeners\org.hibernate.event.def.DefaultLoadEventListener\org.hibernate.engine.TwoPhaseLoad\org.hibernate.type.TypeFactory\org.hibernate.util.ReflectHelper\net.sf.cglib.beans.BulkBean\net.sf.cglib.core.KeyFactory\net.sf.cglib.core.KeyFactory$Generator\net.sf.cglib.core.AbstractClassGenerator\net.sf.cglib.core.DefaultGeneratorStrategy\net.sf.cglib.core.DebuggingClassWriter\net.sf.cglib.core.DebuggingClassWriter$1] are not found
+
+classes [ antlr.SemanticException ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.dialect.Dialect$2\org.hibernate.Hibernate\org.hibernate.type.ManyToOneType\org.hibernate.type.EntityType\org.hibernate.engine.ForeignKeys\org.hibernate.engine.PersistenceContext\org.hibernate.engine.CollectionLoadContext\org.hibernate.cfg.Settings\org.hibernate.hql.QueryTranslatorFactory\org.hibernate.hql.QueryTranslator\org.hibernate.event.EventSource\org.hibernate.engine.ActionQueue\org.hibernate.action.EntityIdentityInsertAction\org.hibernate.event.EventListeners\org.hibernate.event.def.DefaultLoadEventListener\org.hibernate.engine.TwoPhaseLoad\org.hibernate.type.TypeFactory\org.hibernate.type.SortedSetType\org.hibernate.collection.PersistentSortedSet\org.hibernate.persister.collection.BasicCollectionPersister\org.hibernate.loader.collection.BatchingCollectionInitializer\org.hibernate.loader.collection.OneToManyLoader\org.hibernate.loader.collection.CollectionLoader\org.hibernate.loader.OuterJoinLoader\org.hibernate.loader.JoinWalker\org.hibernate.loader.BasicLoader\org.hibernate.loader.Loader\org.hibernate.cache.FilterKey\org.hibernate.impl.FilterImpl\org.hibernate.impl.SessionFactoryImpl\org.hibernate.impl.SessionImpl\org.hibernate.loader.criteria.CriteriaLoader\org.hibernate.loader.criteria.CriteriaQueryTranslator\org.hibernate.hql.ast.util.SessionFactoryHelper\org.hibernate.hql.ast.DetailedSemanticException] are not found
+
+classes [ org.jaxen.VariableContext org.jaxen.FunctionContext org.jaxen.SimpleNamespaceContext org.jaxen.JaxenException org.jaxen.dom4j.Dom4jXPath org.jaxen.NamespaceContext org.jaxen.XPath ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.type.NullableType\org.dom4j.Node\org.dom4j.Element\org.dom4j.QName\org.dom4j.DocumentFactory\org.dom4j.xpath.DefaultXPath] are not found
+
+classes [ antlr.SemanticException antlr.collections.AST ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.dialect.Dialect$2\org.hibernate.Hibernate\org.hibernate.type.ManyToOneType\org.hibernate.type.EntityType\org.hibernate.engine.ForeignKeys\org.hibernate.engine.PersistenceContext\org.hibernate.engine.CollectionLoadContext\org.hibernate.cfg.Settings\org.hibernate.hql.QueryTranslatorFactory\org.hibernate.hql.QueryTranslator\org.hibernate.event.EventSource\org.hibernate.engine.ActionQueue\org.hibernate.action.EntityIdentityInsertAction\org.hibernate.event.EventListeners\org.hibernate.event.def.DefaultLoadEventListener\org.hibernate.engine.TwoPhaseLoad\org.hibernate.type.TypeFactory\org.hibernate.type.SortedSetType\org.hibernate.collection.PersistentSortedSet\org.hibernate.persister.collection.BasicCollectionPersister\org.hibernate.loader.collection.BatchingCollectionInitializer\org.hibernate.loader.collection.OneToManyLoader\org.hibernate.loader.collection.CollectionLoader\org.hibernate.loader.OuterJoinLoader\org.hibernate.loader.JoinWalker\org.hibernate.loader.BasicLoader\org.hibernate.loader.Loader\org.hibernate.cache.FilterKey\org.hibernate.impl.FilterImpl\org.hibernate.impl.SessionFactoryImpl\org.hibernate.impl.SessionImpl\org.hibernate.loader.criteria.CriteriaLoader\org.hibernate.loader.criteria.CriteriaQueryTranslator\org.hibernate.hql.ast.util.SessionFactoryHelper] are not found
+
+classes [ org.logicalcobwebs.proxool.ProxoolFacade org.logicalcobwebs.proxool.configuration.JAXPConfigurator org.logicalcobwebs.proxool.ProxoolException org.logicalcobwebs.proxool.configuration.PropertyConfigurator ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.dialect.Dialect$2\org.hibernate.Hibernate\org.hibernate.type.ManyToOneType\org.hibernate.type.EntityType\org.hibernate.engine.ForeignKeys\org.hibernate.engine.PersistenceContext\org.hibernate.engine.CollectionLoadContext\org.hibernate.cfg.Settings\org.hibernate.hql.QueryTranslatorFactory\org.hibernate.hql.QueryTranslator\org.hibernate.event.EventSource\org.hibernate.engine.ActionQueue\org.hibernate.action.EntityIdentityInsertAction\org.hibernate.event.EventListeners\org.hibernate.event.def.DefaultLoadEventListener\org.hibernate.engine.TwoPhaseLoad\org.hibernate.type.TypeFactory\org.hibernate.type.SortedSetType\org.hibernate.collection.PersistentSortedSet\org.hibernate.persister.collection.BasicCollectionPersister\org.hibernate.loader.collection.BatchingCollectionInitializer\org.hibernate.loader.collection.OneToManyLoader\org.hibernate.loader.collection.CollectionLoader\org.hibernate.loader.OuterJoinLoader\org.hibernate.loader.JoinWalker\org.hibernate.loader.BasicLoader\org.hibernate.loader.Loader\org.hibernate.cache.FilterKey\org.hibernate.impl.FilterImpl\org.hibernate.impl.SessionFactoryImpl\org.hibernate.tool.hbm2ddl.SchemaExport\org.hibernate.cfg.Configuration\org.hibernate.cfg.SettingsFactory\org.hibernate.connection.ConnectionProviderFactory\org.hibernate.connection.ProxoolConnectionProvider] are not found
+
+classes [ antlr.RecognitionException ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.dialect.Dialect$2\org.hibernate.Hibernate\org.hibernate.type.ManyToOneType\org.hibernate.type.EntityType\org.hibernate.engine.ForeignKeys\org.hibernate.engine.PersistenceContext\org.hibernate.engine.CollectionLoadContext\org.hibernate.cfg.Settings\org.hibernate.hql.QueryTranslatorFactory\org.hibernate.hql.QueryTranslator\org.hibernate.event.EventSource\org.hibernate.engine.ActionQueue\org.hibernate.action.EntityIdentityInsertAction\org.hibernate.event.EventListeners\org.hibernate.event.def.DefaultLoadEventListener\org.hibernate.engine.TwoPhaseLoad\org.hibernate.type.TypeFactory\org.hibernate.type.SortedSetType\org.hibernate.collection.PersistentSortedSet\org.hibernate.persister.collection.BasicCollectionPersister\org.hibernate.loader.collection.BatchingCollectionInitializer\org.hibernate.loader.collection.OneToManyLoader\org.hibernate.loader.collection.CollectionLoader\org.hibernate.loader.OuterJoinLoader\org.hibernate.loader.JoinWalker\org.hibernate.loader.BasicLoader\org.hibernate.loader.Loader\org.hibernate.cache.FilterKey\org.hibernate.impl.FilterImpl\org.hibernate.impl.SessionFactoryImpl\org.hibernate.impl.SessionImpl\org.hibernate.loader.criteria.CriteriaLoader\org.hibernate.loader.criteria.CriteriaQueryTranslator\org.hibernate.hql.ast.util.SessionFactoryHelper\org.hibernate.hql.ast.QuerySyntaxException] are not found
+
+classes [ antlr.Token antlr.CommonAST antlr.collections.AST ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.dialect.Dialect$2\org.hibernate.Hibernate\org.hibernate.type.ManyToOneType\org.hibernate.type.EntityType\org.hibernate.engine.ForeignKeys\org.hibernate.engine.PersistenceContext\org.hibernate.engine.CollectionLoadContext\org.hibernate.cfg.Settings\org.hibernate.hql.QueryTranslatorFactory\org.hibernate.hql.QueryTranslator\org.hibernate.event.EventSource\org.hibernate.engine.ActionQueue\org.hibernate.action.EntityIdentityInsertAction\org.hibernate.event.EventListeners\org.hibernate.event.def.DefaultLoadEventListener\org.hibernate.engine.TwoPhaseLoad\org.hibernate.type.TypeFactory\org.hibernate.type.SortedSetType\org.hibernate.collection.PersistentSortedSet\org.hibernate.persister.collection.BasicCollectionPersister\org.hibernate.loader.collection.BatchingCollectionInitializer\org.hibernate.loader.collection.OneToManyLoader\org.hibernate.loader.collection.CollectionLoader\org.hibernate.loader.OuterJoinLoader\org.hibernate.loader.JoinWalker\org.hibernate.loader.BasicLoader\org.hibernate.loader.Loader\org.hibernate.cache.FilterKey\org.hibernate.impl.FilterImpl\org.hibernate.impl.SessionFactoryImpl\org.hibernate.impl.SessionImpl\org.hibernate.loader.criteria.CriteriaLoader\org.hibernate.loader.criteria.CriteriaQueryTranslator\org.hibernate.hql.ast.util.SessionFactoryHelper\org.hibernate.hql.ast.tree.SqlNode\org.hibernate.hql.ast.tree.Node] are not found
+
+classes [ org.jaxen.VariableContext ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.type.NullableType\org.dom4j.Node\org.dom4j.Element\org.dom4j.QName\org.dom4j.DocumentFactory] are not found
+
+classes [ com.mchange.v2.c3p0.PoolConfig com.mchange.v2.c3p0.DataSources ] referenced by [ de.hopfit.util.InitServlet\de.hopfit.timer.InvoiceListener\de.hopfit.controller.InvoiceAction\de.hopfit.resource.InvoiceService\org.hibernate.SessionFactory\org.hibernate.metadata.CollectionMetadata\org.hibernate.type.Type\org.hibernate.engine.SessionFactoryImplementor\org.hibernate.engine.query.QueryPlanCache\org.hibernate.engine.query.NativeSQLQueryPlan\org.hibernate.loader.custom.SQLCustomQuery\org.hibernate.loader.custom.SQLQueryParser\org.hibernate.persister.collection.SQLLoadableCollection\org.hibernate.persister.collection.QueryableCollection\org.hibernate.persister.entity.EntityPersister\org.hibernate.engine.CascadeStyle\org.hibernate.engine.CascadeStyle$MultipleCascadeStyle\org.hibernate.engine.CascadingAction\org.hibernate.engine.CascadingAction$10\org.hibernate.type.CollectionType\org.hibernate.proxy.LazyInitializer\org.hibernate.engine.SessionImplementor\org.hibernate.jdbc.JDBCContext\org.hibernate.jdbc.ConnectionManager$Callback\org.hibernate.jdbc.ConnectionManager\org.hibernate.jdbc.Batcher\org.hibernate.dialect.Dialect\org.hibernate.dialect.Dialect$2\org.hibernate.Hibernate\org.hibernate.type.ManyToOneType\org.hibernate.type.EntityType\org.hibernate.engine.ForeignKeys\org.hibernate.engine.PersistenceContext\org.hibernate.engine.CollectionLoadContext\org.hibernate.cfg.Settings\org.hibernate.hql.QueryTranslatorFactory\org.hibernate.hql.QueryTranslator\org.hibernate.event.EventSource\org.hibernate.engine.ActionQueue\org.hibernate.action.EntityIdentityInsertAction\org.hibernate.event.EventListeners\org.hibernate.event.def.DefaultLoadEventListener\org.hibernate.engine.TwoPhaseLoad\org.hibernate.type.TypeFactory\org.hibernate.type.SortedSetType\org.hibernate.collection.PersistentSortedSet\org.hibernate.persister.collection.BasicCollectionPersister\org.hibernate.loader.collection.BatchingCollectionInitializer\org.hibernate.loader.collection.OneToManyLoader\org.hibernate.loader.collection.CollectionLoader\org.hibernate.loader.OuterJoinLoader\org.hibernate.loader.JoinWalker\org.hibernate.loader.BasicLoader\org.hibernate.loader.Loader\org.hibernate.cache.FilterKey\org.hibernate.impl.FilterImpl\org.hibernate.impl.SessionFactoryImpl\org.hibernate.tool.hbm2ddl.SchemaExport\org.hibernate.cfg.Configuration\org.hibernate.cfg.SettingsFactory\org.hibernate.connection.ConnectionProviderFactory\org.hibernate.connection.C3P0ConnectionProvider] are not found
+
+
+Please either bundle the above mentioned classes in the application or use optional packaging support for them.
+
+        
+          ----------------------------------
+          END OF STATIC VERIFICATION RESULTS
+          ----------------------------------
+    

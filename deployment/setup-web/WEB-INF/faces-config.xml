@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE faces-config PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+  "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+
+<faces-config>
+<!--	
+  <navigation-rule>
+    <from-view-id>/WEB-INF/add_to_cart.jsf</from-view-id>
+    <navigation-case>
+      <to-view-id>/WEB-INF/add_to_cart.do</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+
+   <navigation-rule>
+    <from-view-id>/list_items.jsp</from-view-id>
+    <navigation-case>
+      <to-view-id>/list_items.do</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+-->	
+  <managed-bean>
+    <description>Tabulator Names Value Holder</description>
+    <managed-bean-name>tabName</managed-bean-name>
+    <managed-bean-class>de.hopfit.model.TabName</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+	
+</faces-config>

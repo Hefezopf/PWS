@@ -1,0 +1,60 @@
+MySQL Installieren, dazu diverse/mysql.zip verwenden.
+Es gibt probelem mit neueren Versionen!
+nach cd c:\mysql (!!!!) installieren
+cd c:\mysql\bin
+mysqld-max-nt --install
+oder: mysqld --install
+oder: mysqld --remove
+dann Dienst starten!
+
+MySql front installieren
+root/root
+oder root/ohne pw
+DB ist usr_web3999_1
+localhost
+
+mysql use usr_web3999_1
+
+UPDATE Prefs
+ SET pic=LOAD_FILE("C:\\max\\ProgramCode\\JSP\\cart\\web\\images\\logo6a.gif")
+ WHERE pref_id=3;
+           
+SELECT * FROM Prefs 
+ WHERE pref_id=3;
+
+commit;
+
+
+Invoices nocchmal senden lassen
+UPDATE Orders SET payed_date=NULL WHERE partner_id=2 and payed_date is not null and confirmed_date is not null;
+
+
+INSERT INTO Orders (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('mustermann', 1, '2006-01-10 10:10:10', 10.1, 'Musterstr.17', '87878', 'Musterortort', 'email@musterdomain.de', '098/4545', 'Musterbemerkung','Lieferung', '2006-02-02 21:21:43', '2006-01-10 10:10:10');
+
+
+
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('Testmann', 2, '2006-01-10 10:10:10', 10.1, 'Musterstr.17', '87878', 'Musterortort', 'email@musterdomain.de', '098/4545', 'Musterbemerkung', 'Lieferung', NULL, '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('Testmann', 2, '2006-02-10 10:10:10', 10.1, 'Musterstr.17', '87878', 'Musterortort', 'email@musterdomain.de', '098/4545', 'Musterbemerkung', 'Lieferung', NULL, '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('Testmann', 2, '2006-01-10 10:10:10', 10.1, 'Musterstr.17', '87878', 'Musterortort', 'email@musterdomain.de', '098/4545', 'Musterbemerkung', 'Lieferung', NULL, '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('max', 2, '2006-01-30 13:07:18', 25.18, 'te', '8889', 'kjkljk', 'info@hopf-it.de', '8908', '', 'Delivery', NULL, '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('iu', 100, '2006-01-30 16:35:41', 3, 'iou', 'io', 'u', 'markushopf@arcor.de', 'u', 'oi', 'Selbstabholung (nur', '2006-02-02 22:09:11', '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('Max', 2, '2006-02-01 08:54:45', 57.56, 'T', '333', 'M', 'markushopf@arcor.de', '999', 'kkkkkk', 'Pick it up (only if', NULL, '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('t', 100, '2006-02-01 22:25:16', 1500, 't', 'zt', 'zut', 'info@hopf-it.de', '7777', '', 'Lieferung', '2006-02-02 22:09:11', '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('5', 100, '2006-02-01 22:29:23', 2000, '6', '567', '5', 'info@hopf-it.de', '5', '76', 'Lieferung', '2006-02-02 22:09:11', '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( '987', 100, '2006-02-01 22:40:35', 1500, '89', '789', '7', 'info@hopf-it.de', '7', '897', 'Lieferung', '2006-02-02 22:09:11', '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'Hopf', 2, '2006-02-02 06:47:23', 25.18, 'Klara-Ziegler-Bogen 53', '81739', 'München', 'markus@hopf-it.de', '089/95927841', '', 'Delivery', NULL, '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'Hopf', 1, '2006-02-02 06:48:01', 19.6, 'Klara-Ziegler-Bogen 53', '81739', 'München', 'markus@hopf-it.de', '089/95927841', '', 'Lieferung', '2006-02-02 21:21:43', '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'ui', 2, '2006-02-02 20:31:22', 25.18, 'ou', 'io', 'u', 'info@hopf-it.de', 'uu', 'io', 'Not applicable', NULL, '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('uii', 100, '2006-02-02 20:55:32', 2000, 'u', 'io', 'opüo', 'info@hopf-it.de', 'opüopüo', 'oüpopüo', 'Nicht Zutreffend', '2006-02-02 22:09:11', '2006-01-10 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('8', 100, '2006-02-02 21:17:09', 1500, '90', '8', '90', 'info@hopf-it.de', '90890', '8098', 'Nicht Zutreffend', NULL, '2006-02-06 07:40:38');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( '7', 100, '2006-02-02 21:20:27', 1500, '897', '89', '7', 'info@hopf-it.de', '89', '7', 'Selbstabholung', NULL, '2006-02-06 10:10:10');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( '444', 100, '2006-02-02 22:08:39', 4500, '$', '$', '$', 'info@hopf-it.de', '$$4', '44', 'Lieferung', '2006-02-02 22:09:11', '2006-02-02 22:08:40');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('Hüchtebrock', 1, '2006-02-05 13:47:13', 19.7, 'Brefelds Goren 11', '48599', 'Gronau', 'udo.huechtebrock@gmx.de', '02565/97962', '', 'Lieferung', NULL, '2006-02-05 13:47:14');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'Hüchtebrock', 2, '2006-02-05 13:53:54', 25.18, 'Brefelds Goren 11', '48599', 'Gronau', 'udo.huechtebrock@gmx.de', '02565/97962', '', 'Delivery', NULL, '2006-02-05 13:53:54');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'Hüchtebrock', 1, '2006-02-05 13:56:27', 19.6, 'Brefelds Goren 11', '48599', 'Gronau', 'udo.huechtebrock@gmx.de', '02565/97962', '', 'Lieferung', NULL, '2006-02-05 13:57:09');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'Muster', 1, '2006-02-05 14:37:21', 19.8, 'GG', '4q838', 'Epe', 'udo.huechtebrock@gmx.de', '83883/367638', '', 'Selbstabholung', NULL, '2006-02-05 14:38:05');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'test', 2, '2006-02-06 08:28:47', 25.18, '88', '88', '889', 'info@hopf-it.de', '8989', 'nnnn', 'Pick it up', NULL, '2006-02-06 08:28:47');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('iou', 1, '2006-02-06 08:29:32', 19.7, '98', '90', '8', 'info@hopf-it.de', '90', '908', 'Nicht Zutreffend', NULL, '2006-02-06 08:29:32');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( 'iop', 1, '2006-02-06 08:33:46', 19.6, 'i', 'opi', 'op', 'info@hopf-it.de', 'oi', ' op', 'Selbstabholung', NULL, '2006-02-06 08:33:48');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ('90', 2, '2006-02-06 08:36:20', 25.18, '8', '90', '8', 'info@hopf-it.de', '90', '', 'Delivery', NULL, '2006-02-06 08:37:17');
+INSERT INTO `Orders` (customername, partner_id, date, amount, str, plz, ort, email, tel, bemerkung, art, payed_date, confirmed_date) VALUES ( '8', 104, '2006-02-06 14:43:21', 8, '908', '90', '890', 'info@hopf-it.de', '90', '88', 'Lieferung', NULL, '2006-02-06 14:43:21');

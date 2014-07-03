@@ -1,0 +1,21 @@
+Testsuite: de.hopfit.resource.LoginServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0,24 sec
+------------- Standard Output ---------------
+loginOK
+loginNotOK
+getTarif
+logout
+addPartner
+getPartnerName
+getPartner
+addTarif
+------------- ---------------- ---------------
+
+Testcase: testLoginOK took 0,21 sec
+Testcase: testLoginNotOK took 0,01 sec
+Testcase: testGetTarif took 0 sec
+Testcase: testLogout took 0,01 sec
+Testcase: testAddPartner took 0 sec
+Testcase: testGetPartnerName took 0,01 sec
+Testcase: testGetPartner took 0 sec
+Testcase: testAddTarif took 0 sec

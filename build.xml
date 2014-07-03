@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+
+<project name="publicWEBshop.com Application" default="webapp" basedir=".">
+
+  <!-- =================== Initialize Property Values ===================== -->
+  <property file="build.properties" />
+
+  <taskdef
+	    name="jmeter"
+	    classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask"/>
+	
+  <!-- =================== Convenient Synonyms ============================ -->
+  <target name="clean" depends="cleanWebapp" />
+  <target name="all" depends="clean,webapp,precompile" />
+  <target name="help">
+    <echo>
+Build structure of the Web Application
+Toplevel targets:
+   help     -- this message
+   all      -- cleans and then builds/deploys this Web app.
+   webapp   -- (re)builds and deploys this Web app. to Tomcat
+   clean    -- cleans the deployment environment for this Web app.
+   cleanTomcat -- removes all Tomcat Web apps (except ROOT and tomcat-docs)
+    </echo>
+  </target>
+
+  <!-- =================== CLEAN: Webapp ================================== -->
+  <target name="cleanWebapp">
+<!--    <delete dir="${webapp.dir}" /> -->
+    <delete>
+<!--        <fileset dir="${webapp.dir}" excludes="**/*.jar">
+-->        
+		<fileset dir="${webapp.dir}">
+		  <exclude name="**/*.gif"/>
+          <exclude name="**/*.jar"/>
+<!--    	<exclude name="${webapp.dir}/web-inf/lib/*.jar"/> -->
+		</fileset>
+   </delete> 
+  </target>
+  
+  <!-- =================== CLEAN: Tomcat ================================== -->
+  <target name="cleanTomcat">
+    <delete includeEmptyDirs="true">
+      <fileset dir="${build.dir}" excludes="${tomcat.webapps.toSave}" />
+    </delete>
+  </target>
+  <!-- =================== CLEAN: Backup Files ============================ -->
+  <target name="cleanTmpFiles">
+    <delete>
+      <fileset dir="." defaultExcludes="no" includes="**/*~"/>
+    </delete>
+  </target>
+
+
+  <!-- =================== WEBAPP: All ==================================== -->
+<!--	  <target name="webapp" depends="cleanWebapp,compileWebapp" /> -->
+	  <target name="webapp" depends="clean,compileWebapp" />
+
+
+  <!-- =================== WEBAPP: Compile Web Components ================= -->
+  <target name="compileWebapp" depends="staticWebapp">
+    <javac   srcdir="src"
+  	         destdir="${webapp.dir}/WEB-INF/classes/"
+             deprecation="off" debug="on" optimize="off">
+      <classpath>
+        <!-- Include all JAR files in my local library -->
+        <fileset dir="lib">
+          <include name="*.jar"/>
+        </fileset>
+        <!-- Include all common libraries in Tomcat -->
+        <fileset dir="${tomcat.home}/common/lib">
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+    </javac>
+  </target>
+
+  <!-- =================== WEBAPP: Copy Static Web Files ================== -->
+  <target name="staticWebapp" depends="prepareWebapp, configTomcat">
+    <!-- Copy web files -->
+    <copy todir="${webapp.dir}/">
+      <fileset dir="web" />
+    </copy>
+    <!-- Copy webapp configuration files -->
+    <copy todir="${webapp.dir}/WEB-INF/">
+      <fileset dir="etc" />
+    </copy>
+	 
+    <!-- Copy hibernate configuration files -->
+	<copy todir="${webapp.dir}/WEB-INF/classes/">
+		<fileset dir="src">
+			<exclude name="**/*.java"/>
+		</fileset>
+	</copy>
+	  	   
+	  
+    <!-- Copy library files files -->
+    <copy todir="${webapp.dir}/WEB-INF/lib/">
+      <fileset dir="lib" />
+    </copy>
+  </target>
+
+  <!-- =================== WEBAPP: Create WebApp Directories ============== -->
+  <target name="prepareWebapp">
+    <mkdir dir="${webapp.dir}" />
+    <mkdir dir="${webapp.dir}/WEB-INF" />
+    <mkdir dir="${webapp.dir}/WEB-INF/lib" />
+    <mkdir dir="${webapp.dir}/WEB-INF/classes" />
+  </target>
+
+  <!-- =================== WEBAPP: Copy Tomcat Config/Lib Files =========== -->
+  <target name="configTomcat">
+    <copy todir="${tomcat.home}">
+      <fileset dir="tomcat" />
+    </copy>
+  </target>
+  
+  <!-- =================== DATABASE TARGETS =============================== -->
+
+	<target name="populateMySQLDatabase">
+	    <sql
+	      driver="org.gjt.mm.mysql.Driver"
+	      url="jdbc:mysql://localhost/usr_web3999_1"
+	      userid="hopf"
+	      password=""
+	      classpath="${mysql.home}\lib\mysql.jar"
+	      onerror="continue"
+	      autocommit="true"
+	      print="true"
+	      src="db/data_mysql.sql"
+	      />
+	  </target>
+	  
+		
+  <!-- =================== JSP PRECOMPILE TARGETS =============================== -->
+	
+	  <target name="precompile" depends="jspc,compileJSPs">
+	  </target>	
+		
+  <target name="jspc"> 
+    <taskdef classname="org.apache.jasper.JspC" name="jasper2" > 
+      <classpath id="jspc.classpath"> 
+        <pathelement location="${java.home}/../lib/tools.jar"/> 
+        <fileset dir="${tomcat.home}/bin"> 
+          <include name="*.jar"/> 
+        </fileset> 
+        <fileset dir="${tomcat.home}/server/lib"> 
+          <include name="*.jar"/> 
+        </fileset> 
+        <fileset dir="${tomcat.home}/common/lib"> 
+          <include name="*.jar"/> 
+        </fileset> 
+      </classpath> 
+    </taskdef> 
+
+    <jasper2 validateXml="false" 
+             uriroot="${webapp.dir}" 
+             webXmlFragment="${webapp.dir}/WEB-INF/generated_web.xml" 
+             outputDir="${webapp.dir}/WEB-INF/src" /> 
+
+  </target> 
+
+  <target name="compileJSPs">
+    <mkdir dir="${webapp.dir}/WEB-INF/classes"/>
+    <mkdir dir="${webapp.dir}/WEB-INF/lib"/>
+	  <javac destdir="${tomcat.home}/work/Catalina/localhost/${webapp.name}"
+           optimize="off"
+           debug="on" failonerror="false"
+           srcdir="${webapp.dir}/WEB-INF/src" 
+	   excludes="**/*.smap">
+      <classpath>
+        <pathelement location="${webapp.dir}/WEB-INF/classes"/>
+        <fileset dir="${webapp.dir}/WEB-INF/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="${tomcat.home}/common/classes"/>
+        <fileset dir="${tomcat.home}/common/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="${tomcat.home}/shared/classes"/>
+        <fileset dir="${tomcat.home}/shared/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${tomcat.home}/bin"> 
+          <include name="*.jar"/> 
+        </fileset> 
+      </classpath>
+      <include name="**" />
+      <exclude name="tags/**" />
+    </javac>
+  </target>
+
+<!-- =================== WAR TARGETS =============================== -->
+		
+	  <target name="LIVEdeployWebWar" depends="packWar"> 
+    	<echo message="Das dauert ca. 10 min ....."/>		
+	    <ftp server="server39.mivitec.net" 
+	    	remotedir="html"
+	    	userid="web3999" password="r3JAtdz6">      
+			<fileset dir="deployment" id="id1">
+				<filename name="index.html"/>
+			</fileset>
+			<fileset dir="deployment" id="id2">
+				<filename name="favicon.ico"/>
+			</fileset>
+			<fileset dir="deployment" id="id3">
+				<filename name="*.war"/>
+			</fileset>
+	  	</ftp>
+	  </target>
+	
+	<target name="packWar" depends="compileWebapp">
+	   <delete dir="deployment/setup-web" />
+	  	
+	   <mkdir dir="deployment/setup-web" />
+	   <mkdir dir="deployment/setup-web/images/customer" />
+	   <mkdir dir="deployment/setup-web/WEB-INF"/>
+	   <mkdir dir="deployment/setup-web/WEB-INF/classes/de"/>
+	   <mkdir dir="deployment/setup-web/WEB-INF/lib"/>
+	   <mkdir dir="deployment/setup-web/WEB-INF/view"/>
+	   
+	   <copy file="index.html" tofile="deployment/index.html"/>
+	   <copy file="favicon.ico" tofile="deployment/favicon.ico"/>
+	  	
+	   <copy file="etc/faces-config.xml" tofile="deployment/setup-web/WEB-INF/faces-config.xml"/>
+	   <copy file="etc/web.xml" tofile="deployment/setup-web/WEB-INF/web.xml"/>
+	   <copy file="etc/struts-config.xml" tofile="deployment/setup-web/WEB-INF/struts-config.xml"/>
+	   <copy file="etc/DeploymentDescriptor.wsdd" tofile="deployment/setup-web/WEB-INF/DeploymentDescriptor.wsdd"/>
+
+		<!-- Copy hibernate configuration files -->
+		<copy todir="deployment/setup-web/WEB-INF/classes/">
+			<fileset dir="src">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+	    <copy file="etc/classes/LIVE_hibernate.cfg.xml_LIVE" tofile="deployment/setup-web/WEB-INF/classes/hibernate.cfg.xml"/>
+	    <copy file="etc/classes/log4j.properties" tofile="deployment/setup-web/WEB-INF/classes/log4j.properties"/>
+											  	
+	    <copy todir="deployment/setup-web">
+	     <fileset dir="web"/>
+	    </copy>
+	    <copy todir="deployment/setup-web/images">
+	     <fileset dir="web/images"/>
+	    </copy>
+		   <copy todir="deployment/setup-web/WEB-INF/classes">
+		    <fileset dir="${webapp.dir}/WEB-INF/classes"/>
+		   </copy>
+		   <copy todir="deployment/setup-web/WEB-INF/lib">
+		    <fileset dir="lib"/>
+		   </copy>
+	    <copy todir="deployment/setup-web/WEB-INF/view">
+	     <fileset dir="etc/view"/>
+	    </copy>
+	  	
+	   <jar jarfile="deployment/${webapp.name}.war" 
+	        basedir="deployment/setup-web/" />
+	  </target>
+	
+
+	  <target name="verifyWar">
+	    <delete dir="deployment/verifier-results" />
+	    <mkdir dir="deployment/verifier-results"/>
+	    <exec dir="." executable="${j2ee.home}/bin/verifier.bat">
+	      <arg value="-ra"/>
+	      <arg value="-d"/>
+	      <arg value="deployment/verifier-results"/>
+	      <arg value="deployment/${webapp.name}.war"/>
+	    </exec>
+	  </target>
+
+  <target name="WebServiceCompileClient">
+    <javac   srcdir="."
+  	         destdir="."
+             deprecation="off" debug="on" optimize="off"
+             includes="*.java">
+	  <classpath>
+        <!-- Include all common libraries in Tomcat -->
+        <fileset dir="${axis.home}/lib">
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="WebServiceRunClient" depends="WebServiceCompileClient">
+    <java 
+      fork="on" 
+      classpath=".:${axis.home}/lib/axis.jar:${axis.home}/lib/jaxrpc.jar:${axis.home}/lib/commons-logging.jar:${axis.home}/lib/commons-discovery.jar:${axis.home}/lib/saaj.jar:${axis.home}/lib/wsdl4j.jar:" 
+      classname="WSClient">
+      <arg line="1" />
+      <arg line="2" />
+	  <arg line="http://localhost:8080/pws/services/WSInfo" />
+    </java>
+  </target>
+  
+  <target name="WebServiceDeployService">
+    <java 
+      fork="on" 
+      classpath="${axis.home}/lib/axis.jar:${axis.home}/lib/jaxrpc.jar:${axis.home}/lib/commons-logging.jar:${axis.home}/lib/commons-discovery.jar:${axis.home}/lib/saaj.jar:${axis.home}/lib/wsdl4j.jar" 
+      classname="org.apache.axis.client.AdminClient">
+	  <arg line="-lhttp://localhost:8080/pws/services/AdminService" />
+	  <arg line="etc/DeploymentDescriptor.wsdd" />
+    </java>
+  </target>
+  
+  <target name="LIVEWebServiceRunClient">
+    <java 
+      fork="on" 
+      classpath=".:${axis.home}/lib/axis.jar:${axis.home}/lib/jaxrpc.jar:${axis.home}/lib/commons-logging.jar:${axis.home}/lib/commons-discovery.jar:${axis.home}/lib/saaj.jar:${axis.home}/lib/wsdl4j.jar:" 
+      classname="WSClient">
+      <arg line="1" />
+      <arg line="2" />
+	  <arg line="http://publicwebshop.com/pws/services/WSInfo" />
+    </java>
+  </target>
+  
+	
+  <target name="jUnitRunTest" depends="jUnitCompileTest">
+	<junit printsummary="yes" fork="yes" haltonfailure="yes">
+	  <classpath>
+		<pathelement path="c://mysql//lib//mysql.jar"/>
+		<pathelement location="test"/>
+		<pathelement path="${webapp.dir}/WEB-INF/classes"/>
+	  </classpath>
+      <formatter type="plain"/>
+      <batchtest fork="yes" todir="test">
+ 		   <fileset dir="test">
+				<include name="**/*Test.java"/>
+		   </fileset>
+      </batchtest>
+    </junit>
+  </target>
+	  
+
+  <target name="jUnitCompileTest">
+	<javac   srcdir="test"
+  	         destdir="test"
+             deprecation="off" debug="on" optimize="off">
+      <classpath>
+        <pathelement location="${webapp.dir}/WEB-INF/classes"/>
+        <fileset dir="src">
+          <include name="*.java"/>
+        </fileset>
+		<!-- Include all JAR files in my local library -->
+        <fileset dir="lib">
+          <include name="*.jar"/>
+        </fileset>
+        <!-- Include all common libraries in Tomcat -->
+        <fileset dir="${tomcat.home}/common/lib">
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+    </javac>
+  </target>
+	  			
+  <target name="JMeterTestPlan">
+  <jmeter
+	    jmeterhome="C:\jakarta-jmeter-2.1.1"
+	    testplan="C:\max\ProgramCode\JSP\publicWebShop\jmeter\local\AssertionResults.jmx"
+	    resultlog="C:\max\ProgramCode\JSP\publicWebShop\jmeter\local\AssertionResults.jtl"/>				
+  </target>
+	
+</project>

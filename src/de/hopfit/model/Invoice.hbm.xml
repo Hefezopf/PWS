@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="de.hopfit.model.Invoice" table="Invoices">
+        <id name="invoice_id" column="invoice_id">
+            <generator class="native"/>
+        </id>
+        <property name="partner_id" column="partner_id"/>
+        <property name="create_date" column="create_date"/>
+		<property name="send_date" column="send_date"/>
+		<property name="order_total" column="order_total"/>
+		<property name="order_amount" column="order_amount"/>
+		<property name="invoice_total" column="invoice_total"/>
+<!--		
+	private int    partner_id;
+	private String create_date;
+	private String send_date;
+	private double order_total;
+	private int    order_amount;
+	private double invoice_total;
+	-->			
+    </class>
+</hibernate-mapping>

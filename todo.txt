@@ -1,0 +1,203 @@
+Offene Punkt/Ideen:
+-------------------
+
+DVD shop
+Pizza
+Training
+
+
+HtmlBufferResponeWriterWrapper
+AjaxPhaseListener
+
+
+AJAX und Struts
+http://www.backbase.com/#home/products/ajax_demos.xml[1]
+(Google Web Toolkit)
+
+ 
+
+Täglich Logfile per ftp beziehen
+
+ 
+
+Verschiedene Kategorien von Artikeln mit Tabs in List_items realisieren.
+
+
+Sticker mit Flash oben rechts:
+Rote Fahne mit 'free'
+
+
+Beim ersten mal nach deployen:
+Detail:
+Hintergruin ist Schwarz
+Detail:
+€ Zeichen nicht vorahnden
+
+
+Täglice Maril über statistkik
+Imple. Des StaikListner:
+In tabellne Item, Pref nachschaune, wenn heutiges datum , dann mail
+
+ 
+Umstellung auf URL rewriteing
+
+
+die 3 Uebeschriten fett auf erste seite
+
+
+Wenn man schon den Pro tarif hat kann man nocht mehr updaten!!!
+
+
+Grundpreise werdne nur in Pro angezeigt?!
+
+
+Beim Deutschen shop piiza kommte engl Fehlermeldung cookie!
+
+
+Wenn auf tarif gegnagen wird kommt keine Fehlerseite bei keine cookies
+
+
+String get expired_date() nach Date umstellen
+
+
+//Bei richtigen Bestellungen kommt im Emial immer noch DEMO
+Kann auch im Free Tarif so sein!!! -> prüfen
+
+
+META TAGS für SuchAMschinein nicht im HTML!
+
+
+Durchsuchen bei file upload noch uebersetzen!
+Mal auf engl. BS ausprobieren!
+
+
+Info: Hibernate bislang nur Invoice und Order Tabelle umgesetzt.
+
+evtl. alle Mails asynch versenden!?
+
+Prefs:alle arten defaultmäßig an wenn neuer benutzer registriert
+
+Auslandslieferfee
+
+Tarif mail noch nicht impl.
+
+favicon zu gross beim bookmark!
+
+commit/autocommit bei Invoice?
+
+PW schutz für invoice.jsp .do
+
+Login Tbl
+
+
+Newsletter
+
+
+Automatische Rechnungsgenerierung als PDF
+
+
+Bestätigungmail link zum Besteätigen
+Commited feld in DB
+
+
+Rechnungsstellung - Mehrsprachigkeit?
+
+
+bug? delverfee speichern richtig??!!!
+
+
+Bilder erzeugung?
+Scripte
+precompile
+
+
+Evtl AGB als PDF?
+
+
+Land mit angeben für
+Stammdaten und Registrieung und Cuostomer im Shop
+
+
+Thumbnail
+
+
+Dezimmalpunkt bei Verandpauschale
+und bei Minorderamount unterschiedlich
+im Mail und bei Fehler minorder
+
+
+fileupload 1.1 accept gif
+
+
+JSTL Docu downloaden
+
+
+im Adminbereich eine Prefsgrafik die so aussieht, wie der Shop
+so das man gleich sieht, welche Eistellungen mann macht. In Flash!
+
+
+perf open weg
+
+
+bei jedem login , shop schlieesen
+beim logout öffnen
+hinweis texte
+
+
+Link auf perf seiten, hilfe link
+
+
+Zeiten, shop offen /zu
+
+
+Scrollen wenn viele Artikel
+
+
+Suchen wenn viele artikel
+
+
+bgcolor hint
+Colorchooser
+
+
+#Demo shops
+
+
+mittlere Prio:
+-------------
+www.publicWebPlanner.com
+
+in zwei webapps trennen
+
+MWST
+
+Partnerseiten anders farbig?
+
+DB Sicherung
+Für FTP müßten wir Ihnen gezielt das Verzeichnis freigeben (das wäre, falls erforderlich, möglich); einfacher ist Datensicherung mittels phpMyAdmin: dort gehen Sie auf "Dump der Datenbank anzeigen" -> Struktur und Daten --> Senden --> OK. Es werden nun alle Diese Textdatei können Sie später jederzeit wieder importieren.
+
+
+niedriege Prio:
+---------------
+
+Login PW vergessen einbauen
+
+FAX fkt.
+
+tel symbol im cart
+
+Mehrsprachigkeit
+(auch als Pref für Cart)
+
+Scripte für FTP
+
+bug: prefs: keine Eingabe fehler und alter TExt aus session!
+
+bug: der letzte Artkiel lässt sich nicht löschen
+
+Webservice ss
+
+JMeter
+
+Optik mit anderen Browsern ausprobieren
+IE, Mozilla
