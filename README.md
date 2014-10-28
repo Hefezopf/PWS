@@ -5,6 +5,8 @@ PublicWebShop
 
 git clone https://github.com/Hefezopf/PWS.git
 
+Achtung Tabelle 'Prefs' Spalte wurde umbenannt wegen ORA von 'date' in 'datum'.
+
 // mvn --version // 3.2.2
 
 mvn clean install
