@@ -10,3 +10,6 @@ git clone https://github.com/Hefezopf/PWS.git
 mvn clean install
 
 mvn eclipse:eclipse
+
+SQL Scripte in /db/
+db/data_oracle.sql
