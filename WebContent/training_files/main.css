@@ -1,0 +1,82 @@
+.willkommen {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 20px;
+	font-weight : bold;
+	font-style : italic;
+}
+
+.kurstitel {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	font-weight : bold;
+}
+
+.kurstext {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+
+.kurstextweiss {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : White;
+}
+
+.willkommentitel {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+}
+
+.willkommentext {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+
+.linkschwarz {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	text-decoration : none;
+}
+
+.willtext {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+
+.kursuntertitel {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-style : italic;
+	font-weight : bold;	
+}
+
+.text10 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+
+.kategorie10 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : White;
+}
+
+.menuetext10 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	text-decoration : none;
+	color : Black;
+}
+
+.menuetext12 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	text-decoration : none;
+	color : Black;
+}
+.seminar
+	{
+	color : #f0f0f0;
+	}

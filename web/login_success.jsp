@@ -1,8 +1,0 @@
-<%@ taglib uri="/WEB-INF/lib/struts-tiles.tld" prefix="tiles" %>
-<%@ taglib uri="/WEB-INF/lib/struts-bean.tld" prefix="bean" %>
-
-<tiles:insert page="/WEB-INF/view/layout/adminLayout.jsp">
-  <tiles:put name="subTitle" value=""/>
-  <tiles:put name="message" value="Login was successful!"/>
-  <tiles:put name="body" value="/WEB-INF/view/admin/login_success.jsp"/>
-</tiles:insert>

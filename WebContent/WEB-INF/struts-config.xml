@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	
+  <!-- Forms -->	
+  <form-beans>
+    <form-bean name="NewKundenItemForm" type="de.hopfit.view.NewKundenItemForm" />
+    <form-bean name="PrefForm" type="de.hopfit.view.PrefForm" />
+    <form-bean name="PartnerDataForm" type="de.hopfit.view.PartnerDataForm" />
+	<form-bean name="LoginForm" type="de.hopfit.view.LoginForm" />
+    <form-bean name="RegisterForm" type="de.hopfit.view.RegisterForm" />
+    <form-bean name="TarifForm" type="de.hopfit.view.TarifForm" />
+	<form-bean name="SaveKundenItemForm" type="de.hopfit.view.SaveKundenItemForm" />
+    <!-- Shop -->
+    <form-bean name="OrderAckForm" type="de.hopfit.view.OrderAckForm" />
+    <form-bean name="SummeryForm" type="de.hopfit.view.SummeryForm" />
+  </form-beans>
+
+  <!-- Mappings -->	
+  <action-mappings>
+  
+    <!-- Invoice -->	
+	<action path="/invoice"
+            type="de.hopfit.controller.InvoiceAction">
+      <forward name="success" path="/invoice.jsp" />
+      <forward name="error" path="/invoice.jsp" />
+    </action>
+
+    <!-- PWS -->	
+	<action path="/save_kunden_item"
+            type="de.hopfit.controller.SaveKundenItemAction" 
+ 	    name="SaveKundenItemForm" scope="request" validate="true"
+	    input="/edit_kunden_item.jsp" >
+      <forward name="success" path="/list_kunden_items.do" />
+      <forward name="error" path="/edit_kunden_item_error.jsp" />
+    </action>
+
+	      <action path="/get_kunden_item"
+            type="de.hopfit.controller.GetKundenItemAction" >
+       <forward name="success" path="/edit_kunden_item.jsp" />
+       <forward name="error" path="/edit_kunden_item_error.jsp" />
+    </action>
+
+    <action path="/delete_kunden_item"
+            type="de.hopfit.controller.DeleteKundenItemAction" >
+      <forward name="success" path="/list_kunden_items.do" />
+      <forward name="error" path="/list_kunden_items_error.jsp" />
+    </action>
+
+     <action path="/new_kunden_item"
+            type="de.hopfit.controller.NewKundenItemAction" 
+	    name="NewKundenItemForm" scope="request" validate="true"
+	    input="/new_kunden_item.jsp" >
+      <forward name="success" path="/new_kunden_item_success.jsp" />
+      <forward name="error" path="/new_kunden_item_error.jsp" />
+    </action>
+
+    <action path="/partnerdata_save"
+            type="de.hopfit.controller.PartnerDataSaveAction" 
+	    name="PartnerDataForm" scope="request" validate="true"
+	    input="/partnerdata.jsp" >
+      <forward name="success" path="/partnerdata_success.jsp" />
+      <forward name="error" path="/partnerdata_error.jsp" />
+    </action>
+
+    <action path="/partnerdata_load"
+            type="de.hopfit.controller.PartnerDataLoadAction" >
+      <forward name="success" path="/partnerdata.jsp" />
+      <forward name="notloggedin" path="/notloggedin_error.jsp" />
+      <forward name="error" path="/partnerdata_error.jsp" />
+    </action>
+
+    <action path="/pref_save"
+            type="de.hopfit.controller.PrefSaveAction" 
+	    name="PrefForm" scope="request" validate="true"
+	    input="/pref.jsp" >
+      <forward name="success" path="/pref_success.jsp" />
+      <forward name="error" path="/pref_error.jsp" />
+    </action>
+
+    <action path="/pref_load"
+            type="de.hopfit.controller.PrefLoadAction" >
+      <forward name="success" path="/pref.jsp" />
+      <forward name="notloggedin" path="/notloggedin_error.jsp" />
+      <forward name="error" path="/pref_error.jsp" />
+    </action>
+
+	<action path="/list_kunden_items"
+            type="de.hopfit.controller.ListKundenItemsAction" >
+      <forward name="success" path="/list_kunden_items.jsp" />
+      <forward name="notloggedin" path="/notloggedin_error.jsp" />
+      <forward name="error" path="/list_kunden_items_error.jsp" />
+    </action>
+
+    <action path="/register"
+            type="de.hopfit.controller.RegisterAction" 
+	    name="RegisterForm" scope="request" validate="true"
+	    input="/register.jsp" >
+      <forward name="success" path="/register_success.jsp" />
+      <forward name="error" path="/register.jsp" />
+    </action>
+
+    <action path="/tarif"
+            type="de.hopfit.controller.TarifAction" 
+	    name="TarifForm" scope="request" validate="true"
+	    input="/tarif.jsp" >
+      <forward name="success" path="/tarif_success.jsp" />
+      <forward name="error" path="/tarif.jsp" />
+    </action>
+
+	<action path="/logout"
+            type="de.hopfit.controller.LogoutAction" >
+      <forward name="success" path="/logout_success.jsp" />
+      <forward name="error" path="/logout_error.jsp" />
+    </action>
+
+    <action path="/login"
+            type="de.hopfit.controller.LoginAction" 
+	    name="LoginForm" scope="request" validate="true"
+	    input="/login.jsp" >
+      <forward name="success" path="/login_success.jsp" />
+      <forward name="error" path="/login_error.jsp" />
+    </action>
+
+    <!-- Shop -->	
+    <action path="/list_items"
+            type="de.hopfit.controller.ListItemsAction" >
+  <!--     <forward name="success" path="/list_items.jsp" /> -->	
+      <forward name="success" path="/list_items.jsp" />
+	  <forward name="error" path="/list_items_error.jsp" />
+    </action>
+
+    <action path="/add_to_cart"
+            type="de.hopfit.controller.AddToCartAction" >
+   <!--    <forward name="success" path="/list_items.jsp" /> -->	
+         <forward name="success" path="/list_items.jsp" /> 	
+		 <forward name="error" path="/list_items_error.jsp" />
+    </action>
+
+	<action path="/cart"
+            type="de.hopfit.controller.CartAction" >
+      <forward name="success" path="/order_ack.jsp" />
+     <!--    <forward name="error" path="/list_items.jsp" /> -->	
+      <forward name="error" path="/list_items.jsp" />
+    </action>
+
+    <action path="/order_ack"
+            type="de.hopfit.controller.OrderAckAction" 
+	    name="OrderAckForm" scope="request" validate="true"
+	    input="/order_ack.jsp" >
+      <forward name="success" path="/summery.jsp" />
+      <forward name="notloggedin" path="/notloggedin_error.jsp" />      
+	  <forward name="error" path="/order_ack.jsp" />
+    </action>
+ 
+    <action path="/summery"
+            type="de.hopfit.controller.SummeryAction" 
+	    name="SummeryForm" scope="request" validate="true"
+	    input="/summery.jsp" >
+      <forward name="success" path="/summery_success.jsp" />
+      <forward name="error" path="/summery_error.jsp" />
+    </action>
+ 
+  </action-mappings>
+
+  <!-- i18n -->	
+  <message-resources parameter="web-app" />
+	
+</struts-config>
+
