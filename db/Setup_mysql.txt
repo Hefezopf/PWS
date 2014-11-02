@@ -1,5 +1,21 @@
+Neu am 2.11.2014:
+-----------------
+root user: pw ist 'root'
+User: test_owner pw ist 'test'
+Server wird als System Service gestartet!
+Db anlegen:
+cd dir mySQL
+type: mysql -u root -p
+pw root
+CREATE DATABASE usr_web3999_1;
+use usr_web3999_1;
+select * from tarife;
+
+
+Alt:
+----
 MySQL Installieren, dazu diverse/mysql.zip verwenden.
-Es gibt probelem mit neueren Versionen!
+Es gibt Problem mit neueren Versionen!
 nach cd c:\mysql (!!!!) installieren
 cd c:\mysql\bin
 mysqld-max-nt --install
