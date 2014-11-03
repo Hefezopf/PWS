@@ -14,7 +14,9 @@ Base directory : $projectDir
 """
 
 apply plugin: 'java'
+//apply plugin: 'ant'
 apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
 
 group = 'de.hopfit.pws'
 version = "1.0.$buildVersion"
@@ -42,7 +44,10 @@ dependencies {
 	compile 'org.hibernate:hibernate-core:4.3.6.Final'  
 	compile 'javax.mail:mail:1.4'   	
 	compile 'org.apache.axis:axis:1.4'   
-	compile 'c3p0:c3p0:0.9.1.2'   
+	//compile 'c3p0:c3p0:0.9.1.2'   
+	classpath 'mysql:mysql-connector-java:5.1.33'
+	 //compile 'mysql:mysql-connector-java:5.1.33'
 	
 	testCompile 'junit:junit:3.8.1'   
 }
+
