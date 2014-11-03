@@ -19,7 +19,7 @@ public class PrefForm extends ActionForm {
   /**
 	 * Comment for <code>serialVersionUID</code>
 	 */
-	private static final long serialVersionUID = 1L;	
+	private static final long serialVersionUID = 1L;
 	private String infotext;
 	private String bestelltext;
 	private String summerytext;
@@ -27,28 +27,28 @@ public class PrefForm extends ActionForm {
 	private String bgcolor;
 	private String shop_open ;
 	private FormFile myRequestFile;
-	private String minorderamount;	 
-	private String deliverfee;	 
-	private String currency;	 
+	private String minorderamount;
+	private String deliverfee;
+	private String currency;
     private String show_deliverfee;
     private String show_minorderamount;
     private String show_delivery;
     private String show_pickup;
-    private String show_deliverkind_not_applicabl;
+    private String show_deliverkind_not_applicable;
     private String show_transfer;
     private String show_cash;
-	
+
   public ActionErrors validate(ActionMapping mapping,
                                HttpServletRequest request) {
     ActionErrors errors = new ActionErrors();
 
-    
+
     // Form verification
     if ( currency.equals("")) {
         errors.add("currency",
   		 new ActionMessage("error.currencyField.required"));
     }
-      
+
     if ( bgcolor.length() != 6 ) {
         errors.add("bgcolor",
   		 new ActionMessage("error.bgcolorField.required"));
@@ -56,12 +56,12 @@ public class PrefForm extends ActionForm {
     else
     {
     	try{
-    		Integer.parseInt(bgcolor, 16);	
+    		Integer.parseInt(bgcolor, 16);
     	}catch(NumberFormatException e){
-            errors.add("bgcolor", new ActionMessage("error.bgcolorField.required"));    		
+            errors.add("bgcolor", new ActionMessage("error.bgcolorField.required"));
     	}
     }
-      
+
     if ( myRequestFile.getFileSize() > Const.FILE_SIZE ) {
         errors.add("picFile", new ActionMessage("error.picField.required", Const.FILE_SIZE));
     }
@@ -73,33 +73,33 @@ public class PrefForm extends ActionForm {
         errors.add("minorderamount", new ActionMessage("error.minorderamountField.required"));
     }
     else {
-    	try{  		  
+    	try{
 	  	    DecimalFormat df = new DecimalFormat(Const.PRICE_FORMAT);
 	  	    String s = minorderamount.replace(',','.');
 	   		s = df.format(Double.parseDouble(s));
     	}catch(Exception e){
-            errors.add("minorderamount", new ActionMessage("error.minorderamountField.required"));    		
+            errors.add("minorderamount", new ActionMessage("error.minorderamountField.required"));
     	}
     }
-    
+
     if ( deliverfee == null || deliverfee.length() == 0 ) {
         errors.add("deliverfee", new ActionMessage("error.deliverfeeField.required"));
     }
     else {
-    	try{  		  
+    	try{
 	  	    DecimalFormat df = new DecimalFormat(Const.PRICE_FORMAT);
 	  	    String s = deliverfee.replace(',','.');
 	   		s = df.format(Double.parseDouble(s));
     	}catch(Exception e){
-            errors.add("deliverfee", new ActionMessage("error.deliverfeeField.required"));    		
+            errors.add("deliverfee", new ActionMessage("error.deliverfeeField.required"));
     	}
     }
-    
+
     if(show_cash == null && show_transfer == null)
         errors.add("show_cashshow_transfer", new ActionMessage("error.show_cashshow_transfer.required"));
-    if(show_delivery == null && show_pickup == null && show_deliverkind_not_applicabl == null)
-        errors.add("show_deliveryshow_pickupshow_deliverkind_not_applicabl", new ActionMessage("error.show_deliveryshow_pickupshow_deliverkind_not_applicabl.required"));
-  
+    if(show_delivery == null && show_pickup == null && show_deliverkind_not_applicable == null)
+        errors.add("show_deliveryshow_pickupshow_deliverkind_not_applicable", new ActionMessage("error.show_deliveryshow_pickupshow_deliverkind_not_applicable.required"));
+
 	if (infotext.length() > Const.INFO_TEXT_LENGTH) {
 		errors.add("infotext", new ActionMessage("error.infoField.tooLong"));
 	}
@@ -112,11 +112,11 @@ public class PrefForm extends ActionForm {
 	if (agb.length() > Const.AGB_TEXT_LENGTH) {
 		errors.add("agb", new ActionMessage("error.agbField.tooLong"));
 	}
-    
+
     return errors;
   }
-  
-  
+
+
 	/**
 	 * @return Returns the show_cash.
 	 */
@@ -142,17 +142,17 @@ public class PrefForm extends ActionForm {
 		this.show_deliverfee = show_deliverfee;
 	}
 	/**
-	 * @return Returns the show_deliverkind_not_applicabl.
+	 * @return Returns the show_deliverkind_not_applicable.
 	 */
-	public String getShow_deliverkind_not_applicabl() {
-		return show_deliverkind_not_applicabl;
+	public String getShow_deliverkind_not_applicable() {
+		return show_deliverkind_not_applicable;
 	}
 	/**
-	 * @param show_deliverkind_not_applicabl The show_deliverkind_not_applicabl to set.
+	 * @param show_deliverkind_not_applicable The show_deliverkind_not_applicable to set.
 	 */
-	public void setShow_deliverkind_not_applicabl(
-			String show_deliverkind_not_applicabl) {
-		this.show_deliverkind_not_applicabl = show_deliverkind_not_applicabl;
+	public void setShow_deliverkind_not_applicable(
+			String show_deliverkind_not_applicable) {
+		this.show_deliverkind_not_applicable = show_deliverkind_not_applicable;
 	}
 	/**
 	 * @return Returns the show_delivery.
@@ -208,32 +208,32 @@ public class PrefForm extends ActionForm {
 	public String getAgb() {
 		return agb.replace(Const.JAVA_SCRIPT_ANFUEHRUNGSZEICHEN, Const.ERSATZ_ANFUEHRUNGSZEICHEN);
 	}
-	
+
 	/**
 	 * @param agb The agb to set.
 	 */
 	public void setAgb(String agb) {
 		this.agb = agb;
 	}
-	
+
 	/**
 	 * @return Returns the summerytext.
 	 */
 	public String getSummerytext() {
 		return summerytext;
 	}
-	
+
 	/**
 	 * @param summerytext The summerytext to set.
 	 */
 	public void setSummerytext(String summerytext) {
 		this.summerytext = summerytext;
 	}
-	
+
 	 public String getDeliverfee() {
 	 	return deliverfee;
 	}
-	
+
 	public void setDeliverfee(String deliverfee) {
 		this.deliverfee = deliverfee;
 	}
@@ -241,10 +241,10 @@ public class PrefForm extends ActionForm {
 	public FormFile getMyRequestFile() {
 		 return myRequestFile;
 	}
-		 
+
 	public void setMyRequestFile(FormFile myRequestFile) {
 		 this.myRequestFile = myRequestFile;
-	}		
+	}
 
 	/**
 	 * @return Returns the minorderamount.
@@ -252,7 +252,7 @@ public class PrefForm extends ActionForm {
 	public String getMinorderamount() {
 		return minorderamount;
 	}
-	
+
 	/**
 	 * @param minorderamount The minorderamount to set.
 	 */
@@ -324,5 +324,5 @@ public class PrefForm extends ActionForm {
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	 
+
 }

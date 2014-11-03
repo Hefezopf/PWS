@@ -13,7 +13,7 @@ import de.hopfit.timer.ContextThread;
 
 /**
  * @author Hopf
- * 
+ *
  * TODO To change the template for this generated type comment go to Window -
  * Preferences - Java - Code Style - Code Templates
  */
@@ -38,7 +38,7 @@ public class Const {
 	public static final boolean HIBERNATE = true;
 	// public static final boolean HIBERNATE = false;
 
-	
+
 	//
 	// Timer Variablen
 	//
@@ -97,30 +97,30 @@ public class Const {
 	public static final String DB_LOCAL_USER = "root";
 
 	public static final String DB_LOCAL_PW = "root";
-	
+
 	//
 	// DB Felderlängen
 	// ACHTUNG: Das sind die Längen aus der DB, dem *.sql Script
 	//
-	
+
 	// Artikel
 	public static final int TILTLE_TEXT_LENGTH = 40;
-	
+
 	public static final int ITEM_NO_TEXT_LENGTH = 3;
-	
+
 	public static final int DESCRIPTION_TEXT_LENGTH = 100;
-	
+
 	public static final int DETAIL_DESCRIPTION_TEXT_LENGTH = 255;
-		
+
 	// Prefs
 	public static final int INFO_TEXT_LENGTH = 150;
-	
+
 	public static final int BESTELL_TEXT_LENGTH = 150;
-	
+
 	public static final int SUMMERY_TEXT_LENGTH = 150;
-	
+
 	public static final int AGB_TEXT_LENGTH = 255;
-	
+
 	//
 	// Masken Plausi
 	//
@@ -169,15 +169,15 @@ public class Const {
 	public static final String PRICE_FORMAT = "###0.00";
 
 	public static final int INVALID_ID = -1;
-	
+
 	public static final char JAVA_SCRIPT_ANFUEHRUNGSZEICHEN = '\'';
-	
+
 	public static final char ERSATZ_ANFUEHRUNGSZEICHEN = '`';
 
 	//
 	// EMail
 	//
-	
+
 	// public static final String MAIL_SMTP_HOST = "mail.arcor.de";
 	// public static final String MAIL_SMTP_HOST = "smtp.alturo.net";
 	public static final String MAIL_SMTP_HOST = "smtp.publicwebshop.com";
@@ -194,7 +194,7 @@ public class Const {
 	// public static final String SENDER_EMAIL = "info@hopf-it.de";
 	public static final String SENDER_EMAIL = "info@publicwebshop.com";
 
-	
+
 	// Session und Request Scope Konstanten
 	//
 	public static final String INVOICE = "invoice";
@@ -244,7 +244,7 @@ public class Const {
 	public static final String ITEMLIST = "itemlist";
 
 	/**
-	 * 
+	 *
 	 */
 	public Const() {
 		if (TESTDATA) {
@@ -282,43 +282,43 @@ public class Const {
 	/**
 	 * @return
 	 */
-//	public static Connection getConnection() {
-//		Connection theConnection = null;
-//		try {
-//			Class.forName(DB_DRIVER);
-//			// Verbindung zur Datenquelle (ODBC DSN-Name, z.B. "mysql")
-//			if (WEBRUN)
-//				theConnection = DriverManager.getConnection(DB_URL,
-//						DB_WEB_USER, DB_WEB_PW);
-//			else
-//				theConnection = DriverManager.getConnection(DB_URL,
-//						DB_LOCAL_USER, DB_LOCAL_PW);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//
-//		return theConnection;
-//	}
-	
-	/**
-	 * @return
-	 */
 	public static Connection getConnection() {
 		Connection theConnection = null;
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Class.forName(DB_DRIVER);
 			// Verbindung zur Datenquelle (ODBC DSN-Name, z.B. "mysql")
-//			if (WEBRUN)
-				theConnection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
-						"test_owner", "test");
-//			else
-//				theConnection = DriverManager.getConnection(DB_URL,
-//						DB_LOCAL_USER, DB_LOCAL_PW);
+			if (WEBRUN)
+				theConnection = DriverManager.getConnection(DB_URL,
+						DB_WEB_USER, DB_WEB_PW);
+			else
+				theConnection = DriverManager.getConnection(DB_URL,
+						DB_LOCAL_USER, DB_LOCAL_PW);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 		return theConnection;
 	}
+
+	/**
+	 * @return
+	 */
+//	public static Connection getConnection() {
+//		Connection theConnection = null;
+//		try {
+//			Class.forName("oracle.jdbc.driver.OracleDriver");
+//			// Verbindung zur Datenquelle (ODBC DSN-Name, z.B. "mysql")
+////			if (WEBRUN)
+//				theConnection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+//						"test_owner", "test");
+////			else
+////				theConnection = DriverManager.getConnection(DB_URL,
+////						DB_LOCAL_USER, DB_LOCAL_PW);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//
+//		return theConnection;
+//	}
 
 }

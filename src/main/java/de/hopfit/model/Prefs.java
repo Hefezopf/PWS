@@ -13,7 +13,7 @@ import org.apache.struts.upload.FormFile;
 
 import de.hopfit.util.Const;
 import de.hopfit.util.Logger;
- 
+
 /**
  * @author Hopf
  *
@@ -36,19 +36,19 @@ public class Prefs {
     private String show_minorderamount;
     private String show_delivery;
     private String show_pickup;
-    private String show_deliverkind_not_applicabl;
+    private String show_deliverkind_not_applicable;
     private String show_transfer;
     private String show_cash;
-	 
+
 	/**
 	 * @param bgcolor
 	 * @param url
 	 */
-	public Prefs(String bgcolor, String shop_open, FormFile ff, 
+	public Prefs(String bgcolor, String shop_open, FormFile ff,
 			String infotext, String bestelltext, String summerytext, String agb,
 			String currency, String minorderamount, String deliverfee,
-	        String show_deliverfee, String show_minorderamount, String show_delivery, String show_pickup, 
-	        String show_deliverkind_not_applicabl, String show_transfer, String show_cash) {
+	        String show_deliverfee, String show_minorderamount, String show_delivery, String show_pickup,
+	        String show_deliverkind_not_applicable, String show_transfer, String show_cash) {
 		this.infotext = infotext;
 		this.bestelltext = bestelltext;
 		this.summerytext = summerytext;
@@ -63,12 +63,12 @@ public class Prefs {
         this.show_minorderamount = show_minorderamount;
         this.show_delivery = show_delivery;
         this.show_pickup = show_pickup;
-        this.show_deliverkind_not_applicabl = show_deliverkind_not_applicabl;
+        this.show_deliverkind_not_applicable = show_deliverkind_not_applicable;
         this.show_transfer = show_transfer;
         this.show_cash = show_cash;
 	}
 	public Prefs()
-	{//	super();	
+	{//	super();
 	}
 
 
@@ -97,17 +97,17 @@ public class Prefs {
 		this.show_deliverfee = show_deliverfee;
 	}
 	/**
-	 * @return Returns the show_deliverkind_not_applicabl.
+	 * @return Returns the show_deliverkind_not_applicable.
 	 */
-	public String getShow_deliverkind_not_applicabl() {
-		return show_deliverkind_not_applicabl;
+	public String getShow_deliverkind_not_applicable() {
+		return show_deliverkind_not_applicable;
 	}
 	/**
-	 * @param show_deliverkind_not_applicabl The show_deliverkind_not_applicabl to set.
+	 * @param show_deliverkind_not_applicable The show_deliverkind_not_applicable to set.
 	 */
-	public void setShow_deliverkind_not_applicabl(
-			String show_deliverkind_not_applicabl) {
-		this.show_deliverkind_not_applicabl = show_deliverkind_not_applicabl;
+	public void setShow_deliverkind_not_applicable(
+			String show_deliverkind_not_applicable) {
+		this.show_deliverkind_not_applicable = show_deliverkind_not_applicable;
 	}
 	/**
 	 * @return Returns the show_delivery.
@@ -163,28 +163,28 @@ public class Prefs {
 	public String getAgb() {
 		return agb;
 	}
-	
+
 	/**
 	 * @param agb The agb to set.
 	 */
 	public void setAgb(String agb) {
 		this.agb = agb;
 	}
-	
+
 	/**
 	 * @return Returns the summerytext.
 	 */
 	public String getSummerytext() {
 		return summerytext;
 	}
-	
+
 	/**
 	 * @param summerytext The summerytext to set.
 	 */
 	public void setSummerytext(String summerytext) {
 		this.summerytext = summerytext;
 	}
-	
+
 	/**
 	 * @return
 	 */
@@ -201,32 +201,32 @@ public class Prefs {
 //		}
 	  	return s;
 	}
-	
+
 	public void setDeliverfee(String deliverfee) {
 		this.deliverfee = deliverfee;
 	}
-	
+
 	/**
 	 * @return Returns the currency.
 	 */
 	public String getCurrency() {
 		return currency;
 	}
-	
+
 	/**
 	 * @param currency The currency to set.
 	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	
+
 	/**
 	 * @return Returns the bgcolor.
 	 */
 	public String getBgcolor() {
 		return bgcolor;
 	}
-	
+
 	/**
 	 * @param bgcolor The bgcolor to set.
 	 */
@@ -240,7 +240,7 @@ public class Prefs {
 	public String getShop_open() {
 		return shop_open;
 	}
-	
+
 	/**
 	 * @param shop_open The shop_open to set.
 	 */
@@ -251,7 +251,7 @@ public class Prefs {
 	/**
 	 * @return Returns the minorderamount.
 	 */
-	public String getMinorderamount() {		
+	public String getMinorderamount() {
 
 	  	String s = minorderamount.replace(',','.');
 //		try {
@@ -264,19 +264,19 @@ public class Prefs {
 //			e.printStackTrace();
 //		}
 	  	return s;
-		
+
 		//		DecimalFormat df = new DecimalFormat(Const.PRICE_FORMAT);
 //		return df.format(Double.parseDouble(minorderamount));
 		//return minorderamount;
 	}
-	
+
 	/**
 	 * @param minorderamount The minorderamount to set.
 	 */
 	public void setMinorderamount(String minorderamount) {
 		this.minorderamount = minorderamount;
 	}
-	
+
 	public byte [] getFileData() {
 		byte []b = null;
 		try {
@@ -290,32 +290,32 @@ public class Prefs {
 		}
 		return b;
 	}
-	
+
 	public String getFileName() {
 		return ff.getFileName();
 	}
-	
+
 	/**
 	 * @return Returns the bestelltext.
 	 */
 	public String getBestelltext() {
 		return bestelltext;
 	}
-	
+
 	/**
 	 * @param bestelltext The bestelltext to set.
 	 */
 	public void setBestelltext(String bestelltext) {
 		this.bestelltext = bestelltext;
 	}
-	
+
 	/**
 	 * @return Returns the infotext.
 	 */
 	public String getInfotext() {
 		return infotext;
 	}
-	
+
 	/**
 	 * @param infotext The infotext to set.
 	 */

@@ -13,9 +13,9 @@ CREATE TABLE Invoices (
   PRIMARY KEY (invoice_id)
 );
 
--- 
+--
 -- Daten für Tabelle Invoices
--- 
+--
 --INSERT INTO Invoices VALUES (2, 1, to_date('01.01.2014 16:10:45', 'DD.MM.YYYY HH24:MI:SS'), to_date('01.01.2014 16:10:45', 'DD.MM.YYYY HH24:MI:SS'), 19.8, 1, 0.1);
 
 INSERT INTO Invoices VALUES (1, 1, timestamp'2006-3-15 17:44:15', timestamp'2006-3-15 17:44:15', 19.6, 1, 0.1);
@@ -40,9 +40,9 @@ INSERT INTO Invoices VALUES (21, 121, timestamp'2006-12-1 21:26:37', timestamp'2
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Tabellenstruktur für Tabelle Partners
--- 
+--
 
 DROP TABLE Partners;
 
@@ -72,9 +72,9 @@ CREATE TABLE Partners (
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Daten für Tabelle Partners
--- 
+--
 
 INSERT INTO Partners VALUES (1, '1', 'markus', '0', 'test@publicwebshop.com', 'de', '004989/65999940', 'Demo Pizza', 'Pizzastr.1', '81925', 'München-Johannesk.', 'http://www.demopizza.de', 'Demo Pizzamann', 'Demo Pizza Bank', '70030020', '11111100', 'DE0023235432343324', '235432343989', timestamp'2000-10-10 10:10:10');
 INSERT INTO Partners VALUES (2, '2', 'markus', '0', 'test@publicwebshop.com', 'en', '001/7598841', 'Demo DVD', 'DVDstreet.19', '91927', 'Bosten', 'http://www.demodvd.net', 'Demo Dvdman', 'Demo DVD Bank', '9990099', '9922992299', 'US00888999999', '890890890', timestamp'2000-10-10 10:10:10');
@@ -107,9 +107,9 @@ INSERT INTO Partners VALUES (124, '0', '0', '1', 'info@hopf-it.de', 'en', ' ', '
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Tabellenstruktur für Tabelle Items
--- 
+--
 
 DROP TABLE Items;
 
@@ -129,9 +129,9 @@ CREATE TABLE Items (
   foreign key (partner_id) references Partners
 );
 
--- 
+--
 -- Daten für Tabelle Items
--- 
+--
 
 INSERT INTO Items VALUES (1, 1, 'Pizza', 9.9, 'Eine normale Margarita', '166', NULL, 'Das ist eine leckere Pizza', timestamp'2006-04-04 08:33:14', 'on');
 INSERT INTO Items VALUES (2, 1, 'Spaghetti', 9.8, 'Bolognese', '676', NULL, 'Das sind leckere Spaghetti', timestamp'2006-02-05 08:23:32', 'on');
@@ -162,9 +162,9 @@ INSERT INTO Items VALUES (520, 122, 'bbb', 66, 'gj', '5', NULL, 'hjhgk', timesta
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Tabellenstruktur für Tabelle ObjectIDs
--- 
+--
 
 DROP TABLE ObjectIDs;
 CREATE TABLE ObjectIDs (
@@ -173,9 +173,9 @@ CREATE TABLE ObjectIDs (
   PRIMARY KEY (table_name)
 );
 
--- 
+--
 -- Daten für Tabelle ObjectIDs
--- 
+--
 
 INSERT INTO ObjectIDs VALUES ('Prefs', 125);
 INSERT INTO ObjectIDs VALUES ('Orders', 1071);
@@ -186,9 +186,9 @@ INSERT INTO ObjectIDs VALUES ('Invoices', 1029);
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Tabellenstruktur für Tabelle Orders
--- 
+--
 
 DROP TABLE Orders;
 CREATE TABLE Orders (
@@ -209,9 +209,9 @@ CREATE TABLE Orders (
   PRIMARY KEY (order_id)
 ) ;
 
--- 
+--
 -- Daten für Tabelle Orders
--- 
+--
 
 INSERT INTO Orders VALUES (1045, '90', 1, timestamp'2006-3-15 17:44:9', 19.6, '9', '0ß', '9', 'info@hopf-it.de', '0ß', '9', 'Lieferung', timestamp'2006-3-15 17:44:15', timestamp'2006-3-15 17:44:9');
 INSERT INTO Orders VALUES (1046, '09', 2, timestamp'2006-3-16 21:21:37', 25.18, '8', '098', '09', 'info@hopf-it.de', '09', '8', 'Delivery', timestamp'2006-4-7 13:42:41', timestamp'2006-3-16 21:21:38');
@@ -244,9 +244,9 @@ INSERT INTO Orders VALUES (1070, 'lök', 121, timestamp'2006-11-27 21:32:40', 33
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Tabellenstruktur für Tabelle Prefs
--- 
+--
 
 DROP TABLE Prefs;
 CREATE TABLE Prefs (
@@ -268,17 +268,17 @@ CREATE TABLE Prefs (
   show_minorderamount char(3) default 'on',
   show_delivery char(3) default 'on',
   show_pickup char(3) default 'on',
-  show_deliverkind_not_applicabl char(3) default 'on',
+  show_deliverkind_not_applicable char(3) default 'on',
   show_transfer char(3) default 'on',
   show_cash char(3) default 'on',
   PRIMARY KEY  (pref_id),
 -- KEY fk_REF_1 (partner_id)
-  foreign key (partner_id) references Partners  
+  foreign key (partner_id) references Partners
 );
 
--- 
+--
 -- Daten für Tabelle Prefs
--- 
+--
 
 INSERT INTO Prefs VALUES (1, 1, 'BAFF75', 'DEMO Bestellung!!<br/>Lieferzeit nicht länger als eine halbe Stunde. Alle Preise inkl. gesetzl. MwSt.', 'DEMO Bestellung!!<br/>Unsere Pizzeria legt Wert auf ehrliche Kunden und vertraut den korrekten Angaben', 'DEMO Bestellung!!<br/>Bitte empfehem Sie uns weiter, sollten Ihnen unsere Gericht schmecken', 'Es gelten die AGB von DEMO Pizza', 'on', utl_raw.cast_to_raw('C:\max\pws\src\main\webapp\training_files\cobra_logo.jpe'), '€', timestamp'2006-02-06 08:32:18', 10, 0, 'on', 'on', 'on', 'on', NULL, NULL, 'on');
 INSERT INTO Prefs VALUES (2, 2, 'FFFF00', 'DEMO Order!<br/>Delivery about 7 days. All prices incl. tax', 'DEMO Order!<br/>Please enter correct values for correct delivery', 'DEMO Order!<br/>This month we offer you 10%!', 'DEMO rules!\\nWe have the following business rules of DEMO DVD:\\nHere goes the text...', 'on', utl_raw.cast_to_raw('C:\max\pws\src\main\webapp\training_files\cobra_logo.jpe'), '$', timestamp'2006-04-07 13:32:48', 20, 3.95, 'on', 'on', 'on', 'on', NULL, 'on', 'on');
@@ -311,9 +311,9 @@ INSERT INTO Prefs VALUES (124, 124, 'FFFFFF', '', '', '', '', NULL, NULL, '', ti
 
 -- --------------------------------------------------------
 
--- 
+--
 -- Tabellenstruktur für Tabelle Tarife
--- 
+--
 
 DROP TABLE Tarife;
 CREATE TABLE Tarife (
@@ -326,12 +326,12 @@ CREATE TABLE Tarife (
   tx_rate BINARY_FLOAT default '0' NOT NULL,
   min_tx_price BINARY_FLOAT default '0' NOT NULL,
   PRIMARY KEY (tarif_id),
-  foreign key (partner_id) references Partners 
+  foreign key (partner_id) references Partners
 );
 
--- 
+--
 -- Daten für Tabelle Tarife
--- 
+--
 
 INSERT INTO Tarife VALUES (1, 1, 'Free', timestamp'2006-01-10 10:10:10', timestamp'2006-02-10 10:10:10', 0, 0, 0);
 INSERT INTO Tarife VALUES (2, 2, 'Basic', timestamp'2005-10-10 10:10:10', timestamp'2006-10-10 10:10:10', 20, 0, 0.1);

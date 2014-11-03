@@ -26,7 +26,7 @@ public class AdminDAO extends DAO {
 
 	private static final String UPDATE_PARTNER = "UPDATE Partners SET email=?, partner_language=?, telefon=?, partnername=?, str=?, plz=?, ort=?, urlhomepage=?, ktoinhaber=?, bankname=?, blz=?, ktonr=?, iban=?, bic=? WHERE partner_id=?";
 
-	private static final String GET_PREFS = "SELECT bgcolor, infotext, bestelltext, summerytext, agb, shop_open, pic, currency, minorderamount, deliverfee, show_deliverfee, show_minorderamount, show_delivery, show_pickup, show_deliverkind_not_applicabl, show_transfer, show_cash FROM Prefs WHERE partner_id=?";
+	private static final String GET_PREFS = "SELECT bgcolor, infotext, bestelltext, summerytext, agb, shop_open, pic, currency, minorderamount, deliverfee, show_deliverfee, show_minorderamount, show_delivery, show_pickup, show_deliverkind_not_applicable, show_transfer, show_cash FROM Prefs WHERE partner_id=?";
 
 	private static final String GET_PREFS_TODAY = "SELECT partner_id, date FROM Prefs WHERE partner_id=?";
 
@@ -34,9 +34,9 @@ public class AdminDAO extends DAO {
 
 	private static final String GET_PARTNERS_TODAY = "SELECT partner_id, date FROM Partners WHERE partner_id=?";
 
-	private static final String UPDATE_PREFS = "UPDATE Prefs SET bgcolor=?, infotext=?, bestelltext=?, summerytext=?, agb=?, shop_open=?, currency=?, date=?, minorderamount=?, deliverfee=?, show_deliverfee=?, show_minorderamount=?, show_delivery=?, show_pickup=?, show_deliverkind_not_applicabl=?, show_transfer=?, show_cash=?, pic=? WHERE partner_id=?";
+	private static final String UPDATE_PREFS = "UPDATE Prefs SET bgcolor=?, infotext=?, bestelltext=?, summerytext=?, agb=?, shop_open=?, currency=?, date=?, minorderamount=?, deliverfee=?, show_deliverfee=?, show_minorderamount=?, show_delivery=?, show_pickup=?, show_deliverkind_not_applicable=?, show_transfer=?, show_cash=?, pic=? WHERE partner_id=?";
 
-	private static final String UPDATE_PREFS_NO_IMAGE = "UPDATE Prefs SET bgcolor=?, infotext=?, bestelltext=?, summerytext=?, agb=?, shop_open=?, currency=?, date=?, minorderamount=?, deliverfee=?, show_deliverfee=?, show_minorderamount=?, show_delivery=?, show_pickup=?, show_deliverkind_not_applicabl=?, show_transfer=?, show_cash=? WHERE partner_id=?";
+	private static final String UPDATE_PREFS_NO_IMAGE = "UPDATE Prefs SET bgcolor=?, infotext=?, bestelltext=?, summerytext=?, agb=?, shop_open=?, currency=?, date=?, minorderamount=?, deliverfee=?, show_deliverfee=?, show_minorderamount=?, show_delivery=?, show_pickup=?, show_deliverkind_not_applicable=?, show_transfer=?, show_cash=? WHERE partner_id=?";
 
 	/**
 	 * @param partner_id
@@ -286,14 +286,14 @@ public class AdminDAO extends DAO {
 		cal.roll(Calendar.DATE, -1);
 		java.util.Date yesterday = cal.getTime();
 //		Logger.log("yesterday : " + yesterday);
-		
-		if( (yesterday.getYear() == db_datum.getYear()) && 
-				(yesterday.getMonth() == db_datum.getMonth()) && 
+
+		if( (yesterday.getYear() == db_datum.getYear()) &&
+				(yesterday.getMonth() == db_datum.getMonth()) &&
 				(yesterday.getDate() == db_datum.getDate()) )
 			return true;
 		return false;
     }
-     
+
 	/**
 	 * @param partner_id
 	 * @return
@@ -385,7 +385,7 @@ public class AdminDAO extends DAO {
 			ps.setString(12, prefs.getShow_minorderamount());
 			ps.setString(13, prefs.getShow_delivery());
 			ps.setString(14, prefs.getShow_pickup());
-			ps.setString(15, prefs.getShow_deliverkind_not_applicabl());
+			ps.setString(15, prefs.getShow_deliverkind_not_applicable());
 			ps.setString(16, prefs.getShow_transfer());
 			ps.setString(17, prefs.getShow_cash());
 
@@ -466,8 +466,8 @@ public class AdminDAO extends DAO {
 						.getString("show_minorderamount"));
 				prefs.setShow_delivery(rs.getString("show_delivery"));
 				prefs.setShow_pickup(rs.getString("show_pickup"));
-				prefs.setShow_deliverkind_not_applicabl(rs
-						.getString("show_deliverkind_not_applicabl"));
+				prefs.setShow_deliverkind_not_applicable(rs
+						.getString("show_deliverkind_not_applicable"));
 				prefs.setShow_transfer(rs.getString("show_transfer"));
 				prefs.setShow_cash(rs.getString("show_cash"));
 				try {
