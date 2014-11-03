@@ -1,0 +1,48 @@
+description = 'pws'
+
+logger.lifecycle """\
+================================================================================
+Welcome to PWS
+================================================================================
+GIT : https://....
+
+Gradle version : $gradle.gradleVersion
+Gradle home is : $gradle.gradleHomeDir
+Gradle user dir: $gradle.gradleUserHomeDir
+Base directory : $projectDir
+================================================================================
+"""
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'de.hopfit.pws'
+version = "1.0.$buildVersion"
+
+targetCompatibility = JavaVersion.VERSION_1_7
+sourceCompatibility = JavaVersion.VERSION_1_7
+
+compileJava.options.encoding = 'iso-8859-15'
+compileTestJava.options.encoding = 'iso-8859-15'
+[compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:unchecked,deprecation']
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    baseName = 'pws'
+    version =  '0.1.0'
+}
+
+dependencies {
+    compile 'javax.servlet:servlet-api:2.5'
+    compile 'struts:struts:1.2.8'
+	compile 'org.hibernate:hibernate-core:4.3.6.Final'  
+	compile 'javax.mail:mail:1.4'   	
+	compile 'org.apache.axis:axis:1.4'   
+	compile 'c3p0:c3p0:0.9.1.2'   
+	
+	testCompile 'junit:junit:3.8.1'   
+}
