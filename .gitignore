@@ -36,3 +36,11 @@ Icon
 .Trashes
 
 *.class
+*.class
+target/surefire-reports/TEST-de.hopfit.resource.AdminServiceTest.xml
+target/surefire-reports/TEST-de.hopfit.resource.LoginServiceTest.xml
+target/surefire-reports/de.hopfit.resource.LoginServiceTest.txt
+target/surefire-reports/de.hopfit.resource.AdminServiceTest.txt
+target/pws.war
+target/maven-archiver/pom.properties
+target/classes/de/hopfit/controller/ListItemsAction.class
