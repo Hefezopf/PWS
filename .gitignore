@@ -38,4 +38,5 @@ Icon
 *.class
 target/
 build/
-.gradle/
+.gradle/2.1/taskArtifacts/fileHashes.bin
+.gradle/2.1/taskArtifacts/cache.properties.lock
