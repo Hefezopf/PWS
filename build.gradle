@@ -14,7 +14,7 @@ Base directory : $projectDir
 """
 
 apply plugin: 'java'
-//apply plugin: 'ant'
+apply plugin: 'war'
 apply plugin: 'eclipse'
 apply plugin: 'eclipse-wtp'
 
@@ -35,7 +35,7 @@ repositories {
 
 jar {
     baseName = 'pws'
-    version =  '0.1.0'
+    version =  '0.1.$buildVersion'
 }
 
 dependencies {
@@ -44,8 +44,8 @@ dependencies {
 	compile 'org.hibernate:hibernate-core:4.3.6.Final'
 	compile 'javax.mail:mail:1.4'
 	compile 'org.apache.axis:axis:1.4'
-	compile 'mysql:mysql-connector-java:5.1.33'
+
+    compile files("WebContent/WEB-INF/lib/mysql-connector-java-5.1.33-bin.jar")	
 
 	testCompile 'junit:junit:3.8.1'
 }
-
