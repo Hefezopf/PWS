@@ -1,7 +1,7 @@
 www.mivitec.de
 --------------
 
-Für PWS: WebFTP über Confixx:
+FÃ¼r PWS: WebFTP Ã¼ber Confixx:
 FTP-Benutzer: web3999f1
 Passwort: WkK5uPdQ
 
@@ -11,7 +11,7 @@ Passwort: vezaeyei
 
 TomcatSteuerung:
 Erst bei Confixx einloggen unter Zusatzfkt Tomcatlink
-oder über http://admin.mirsky.de/
+oder Ã¼ber http://admin.mirsky.de/
 publicwebshop.com
 Kennwort: r3JAtdz6
 
@@ -23,7 +23,7 @@ Passwort: d27ZW1tT
 
 Angelegte EMailAdressen:
 Postfach: web3999p1
-PW: markus
+PW: *
 info@publicwebshop.com
 markus@publicwebshop.com
 jutta@publicwebshop.com
@@ -37,17 +37,17 @@ Ihre FTP/Confixx-Zugangsdaten:
 Benutzername: web3999
 Kennwort: r3JAtdz6
 http://server39.mivitec.net
-habe PW ausversehen geändert jetzt PW = markus
+habe PW ausversehen geÃ¤ndert jetzt PW = *
 
 Ihre Rechnungs-Zugangsdaten:
 Benutzername: kunde31979
 Kennwort: r3JAtdz6
 
-Confixx-Steuerungsinterface für die Verwaltung des Webseite:
+Confixx-Steuerungsinterface fÃ¼r die Verwaltung des Webseite:
 http://server39.mivitec.net 
 FTP-Server: server39.mivitec.net 
 
-vorläufige URL:
+vorlÃ¤ufige URL:
 http://web3999.server39.mivitec.net/
 
 http://admin.mirsky.de 
